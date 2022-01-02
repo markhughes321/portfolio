@@ -1,0 +1,72 @@
+#container-home {
+  max-width: 1280px;
+  padding: 0 4.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.container-resume {
+  padding: 1rem; }
+
+.card {
+  padding: 1rem; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6; }
+
+a {
+  color: #d1d1d1; }
+
+ul {
+  list-style: none; }
+
+h2,
+h3,
+h4 {
+  text-transform: none; }
+
+img {
+  width: 100%; }
+
+#logo {
+  height: 50px;
+  width: 70px;
+  color: #d1d1d1;
+  text-transform: none; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    padding: 1rem 3rem; }
+  #main-nav a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s; }
+    #main-nav a:hover {
+      border-color: #ff0; }
+    #main-nav a.current {
+      border-color: #ff0; }
+
+#header-home {
+  background: url("../img/background3.jpg") no-repeat center right/cover;
+  height: 100vh;
+  color: #d1d1d1; }
+
+/* Resume Sections */
+#resume .sections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 2rem;
+  align-content: center; }

@@ -1,0 +1,102 @@
+@import "config";
+@import "utilities";
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: $light-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: none;
+}
+
+img {
+  width: 100%;
+}
+
+// Logo
+#logo {
+  height: 50px;
+  width: 70px;
+  color: $light-color;
+  text-transform: none;
+}
+
+// Main nav
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $alt-color;
+    }
+
+    &.current {
+      border-color: $alt-color;
+    }
+  }
+}
+
+// Heaader
+#header {
+  &-home {
+    background: $bg-image no-repeat center right / cover;
+    height: 100vh;
+    color: $light-color;
+  }
+}
+
+/* Resume Sections */
+#resume .sections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 2rem;
+  align-content: center;
+}
+
+#resume .sections > *:last-child {
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  // grid-gap: 1rem;
+  // align-items: center;
+  // grid-column: 1 / span 2;
+  //width: 50%;
+}
+
+#resume .sections > *:last-child {
+  // grid-column: 2 / span 2;
+}
