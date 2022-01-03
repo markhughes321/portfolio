@@ -1,14 +1,14 @@
-#container-home {
-  max-width: $website-width;
-  padding: 0 4.5rem;
+#container-nav {
+  max-width: $wetbv, k8bsite-width;
+  padding: 1.5rem;
   margin: auto;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container-resume {
-  padding: 1rem;
-}
-
-.card {
-  padding: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 2fr 1fr;
 }
