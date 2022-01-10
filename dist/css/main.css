@@ -9,7 +9,7 @@
 .container-resume {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 2fr 1fr; }
+  grid-template-columns: 1.3fr 2fr 1fr; }
 
 * {
   margin: 0;
@@ -32,12 +32,25 @@ ul {
 
 h1 {
   font-size: 46pt;
-  font-weight: 800; }
+  font-weight: 500; }
 
-h2,
-h3,
-h4 {
-  text-transform: none; }
+h2 {
+  font-size: 32pt;
+  font-weight: 400; }
+
+h3 {
+  font-size: 22pt;
+  font-weight: 400; }
+
+.about-text {
+  font-size: 16pt;
+  font-weight: 400;
+  word-spacing: -2px;
+  margin-bottom: 1rem; }
+
+.attributes {
+  font-size: 18pt;
+  font-weight: 300; }
 
 img {
   width: 100%; }
@@ -74,12 +87,17 @@ img {
   border: #ccc 1px solid; }
 
 [class*="item"] {
-  padding: 3rem;
+  padding: 1rem;
   border: #ccc 1px solid;
   font-size: 1.3rem;
   font-weight: bold;
   text-align: left;
   align-items: center; }
+
+[class*="expirience"] {
+  border: #ccc 1px solid;
+  font-weight: bold;
+  line-height: 20px; }
 
 .item-4 {
   grid-column: 1 / span 2; }
