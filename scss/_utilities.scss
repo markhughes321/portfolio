@@ -1,16 +1,49 @@
-#container-nav
+.container
 {
-  max-width: $website-width;
-  padding: 1.5rem;
-  margin: auto;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
+  &-nav
+  {
+    max-width: $website-width;
+    padding: 1.5rem;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-resume
+  {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1.3fr 2fr 1fr;
+  }
 }
 
-.container-resume
+.section
 {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1.3fr 2fr 1fr;
+  padding: 2rem;
+  border: #ccc 1px solid;
+}
+
+.item
+{
+  padding: 1rem;
+  border: #ccc 1px solid;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: left;
+  align-items: center;
+
+  &-4
+  {
+    grid-column: 1 / span 2;
+  }
+}
+
+.expirience
+{
+  border: #ccc 1px solid;
+  font-weight: bold;
+  line-height: 20px;
 }
