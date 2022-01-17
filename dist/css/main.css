@@ -3,34 +3,44 @@
   padding: 1.5rem;
   margin: auto;
   overflow: hidden;
-  display: flex;
-  justify-content: space-between; }
+  text-align: center; }
+  .container-nav ul,
+  .container-nav li {
+    text-align: center;
+    justify-content: center; }
 
 .container-resume {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1.3fr 2fr 1fr; }
+  grid-template-columns: 1.3fr 1.4fr 1fr;
+  align-content: center;
+  padding-left: 4rem;
+  padding-right: 4rem; }
 
 .section {
   display: grid;
   grid-gap: 1rem;
-  padding: 2rem;
-  border: #ccc 1px solid; }
+  padding: 1rem; }
 
 .item {
-  padding: 1rem;
-  border: #ccc 1px solid;
-  font-size: 1.3rem;
-  font-weight: bold;
   text-align: left;
   align-items: center; }
+  .item-2 p {
+    line-height: normal; }
+  .item-3 ul {
+    font-size: 22pt;
+    Padding-left: 14px; }
   .item-4 {
-    grid-column: 1 / span 2; }
-
-.expirience {
-  border: #ccc 1px solid;
-  font-weight: bold;
-  line-height: 20px; }
+    grid-column: 1 / span 2;
+    text-align: justify; }
+    .item-4 p {
+      line-height: normal; }
+  .item-5, .item-6 {
+    line-height: normal; }
+  .item .expirience {
+    grid-gap: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px; }
 
 * {
   margin: 0;
@@ -42,36 +52,47 @@ body {
   line-height: 1.6;
   background: url("../img/background1.jpg") no-repeat center right/cover;
   height: 100vh;
-  color: #d1d1d1; }
+  color: #C8C8C8; }
 
 a {
-  color: #d1d1d1;
+  color: #C8C8C8;
   text-decoration: none; }
 
 ul {
   list-style: none; }
 
-h1 {
-  font-size: 46pt;
+p {
+  font-size: 15pt;
   font-weight: 500; }
+
+h1 {
+  font-size: 56pt;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row; }
+  h1:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+    color: #ff0; }
 
 h2 {
   font-size: 32pt;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-bottom: 20px; }
 
 h3 {
   font-size: 22pt;
   font-weight: 400; }
 
-.about-text {
-  font-size: 16pt;
-  font-weight: 400;
-  word-spacing: -2px;
-  margin-bottom: 1rem; }
+h4 {
+  font-size: 14pt;
+  font-weight: 600; }
 
-.attributes {
-  font-size: 18pt;
-  font-weight: 300; }
+h5 {
+  font-size: 14pt;
+  font-weight: 100; }
 
 img {
   width: 100%; }
@@ -79,7 +100,7 @@ img {
 #logo {
   height: 50px;
   width: 70px;
-  color: #d1d1d1;
+  color: #C8C8C8;
   text-transform: none; }
 
 #main-nav ul {
@@ -92,7 +113,7 @@ img {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  border-bottom: 3px transparent solid;
+  border-bottom: 1px transparent solid;
   padding-bottom: 0.5rem;
   transition: border-color 0.5s; }
   #main-nav a:hover {
