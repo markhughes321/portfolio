@@ -6,6 +6,9 @@
   text-align: center; }
   .container-nav ul,
   .container-nav li {
+    font-family: SupplyMono-Ultralight;
+    font-size: 18pt;
+    font-weight: 100;
     text-align: center;
     justify-content: center; }
 
@@ -72,6 +75,11 @@ ul {
   list-style: none;
   font-family: SupplyMono-Ultralight; }
 
+#logo {
+  font-size: 50px; }
+  #logo:hover {
+    color: #ff0; }
+
 p {
   font-family: SupplyMono-Regular;
   font-size: 17pt;
@@ -116,12 +124,6 @@ h6 {
 
 img {
   width: 100%; }
-
-#logo {
-  height: 50px;
-  width: 70px;
-  color: #C8C8C8;
-  text-transform: none; }
 
 #main-nav ul {
   display: flex; }

@@ -31,6 +31,16 @@ ul
   font-family: SupplyMono-Ultralight;
 }
 
+#logo
+{
+  font-size: 50px;
+
+  &:hover
+  {
+    color: $alt-color;
+  }
+}
+
 p
 {
   font-family: SupplyMono-Regular;
@@ -94,14 +104,6 @@ img
   width: 100%;
 }
 
-// Logo
-#logo
-{
-  height: 50px;
-  width: 70px;
-  color: $light-color;
-  text-transform: none;
-}
 
 // Main nav
 #main-nav
