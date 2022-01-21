@@ -9,15 +9,12 @@
     text-align: center;
     // border: #ccc 1px solid;
 
-
     ul,
     li
     {
-      font-family: SupplyMono-Ultralight;
-      font-size: 18pt;
-      font-weight: 100;
       text-align: center;
       justify-content: center;
+      padding: 1rem 3rem;
     }
   }
 
@@ -57,12 +54,6 @@
 
   &-3
   {
-    ul
-    {
-      font-size: 22pt;
-      padding-left: 14px;
-    }
-
     li
     {
       display: inline;
@@ -73,16 +64,6 @@
   {
     grid-column: 1 / span 2;
     text-align: justify;
-
-    h3
-    {
-      margin-bottom: 2rem;
-    }
-
-    h4
-    {
-      margin-bottom: 2rem;
-    }
   }
 
   .expirience

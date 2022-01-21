@@ -6,11 +6,9 @@
   text-align: center; }
   .container-nav ul,
   .container-nav li {
-    font-family: SupplyMono-Ultralight;
-    font-size: 18pt;
-    font-weight: 100;
     text-align: center;
-    justify-content: center; }
+    justify-content: center;
+    padding: 1rem 3rem; }
 
 .container-resume {
   display: grid;
@@ -31,18 +29,11 @@
   text-align: left;
   align-items: center;
   line-height: normal; }
-  .item-3 ul {
-    font-size: 22pt;
-    padding-left: 14px; }
   .item-3 li {
     display: inline; }
   .item-4 {
     grid-column: 1 / span 2;
     text-align: justify; }
-    .item-4 h3 {
-      margin-bottom: 2rem; }
-    .item-4 h4 {
-      margin-bottom: 2rem; }
   .item .expirience {
     grid-gap: 1rem;
     padding-top: 10px;
@@ -62,10 +53,10 @@
   box-sizing: border-box; }
 
 body {
-  line-height: 1.6;
   background: url("../img/background1.jpg") no-repeat center right/cover;
   height: 100vh;
-  color: #C8C8C8; }
+  color: #C8C8C8;
+  word-spacing: -5px; }
 
 a {
   color: #C8C8C8;
@@ -75,8 +66,19 @@ ul {
   list-style: none;
   font-family: SupplyMono-Ultralight; }
 
+#logo, #main-nav a {
+  text-decoration: none;
+  color: #C8C8C8;
+  padding-bottom: 0.5rem;
+  transition: border-color 1s; }
+  #logo:hover, #main-nav a:hover {
+    border-color: #ff0; }
+  .current#logo, #main-nav a.current {
+    border-color: #ff0; }
+
 #logo {
-  font-size: 50px; }
+  font-size: 50px;
+  transition: color 1s; }
   #logo:hover {
     color: #ff0; }
 
@@ -85,7 +87,6 @@ p {
   font-size: 17pt;
   line-height: 28px;
   font-weight: 400;
-  word-spacing: -10px;
   letter-spacing: -1.2px; }
 
 h1 {
@@ -106,14 +107,13 @@ h3 {
   font-weight: 600;
   margin-bottom: 20px; }
 
-h4 {
+h4,
+h5 {
   font-family: SupplyMono-Ultralight;
   font-size: 18pt;
   font-weight: 600; }
 
 h5 {
-  font-family: SupplyMono-Ultralight;
-  font-size: 18pt;
   font-weight: 100; }
 
 h6 {
@@ -129,19 +129,13 @@ img {
   display: flex; }
 
 #main-nav li {
-  padding: 1rem 3rem; }
+  font-family: SupplyMono-Ultralight;
+  font-size: 18pt;
+  font-weight: 100; }
 
 #main-nav a {
-  text-decoration: none;
-  color: #fff;
   text-transform: uppercase;
-  border-bottom: 1px transparent solid;
-  padding-bottom: 0.5rem;
-  transition: border-color 0.5s; }
-  #main-nav a:hover {
-    border-color: #ff0; }
-  #main-nav a.current {
-    border-color: #ff0; }
+  border-bottom: 1px transparent solid; }
 
 @media (max-width: 500px) {
   .container {
