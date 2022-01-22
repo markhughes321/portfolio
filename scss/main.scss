@@ -50,14 +50,7 @@ ul
 
 #logo
 {
-  @extend %hover-shared;
-  font-size: 50px;
-  transition: color 1s;
-
-  &:hover
-  {
-    color: $alt-color;
-  }
+  width: 100px;
 }
 
 p
@@ -133,9 +126,8 @@ img
   li
   {
 
-    font-family: SupplyMono-Ultralight;
-    font-size: 18pt;
-    font-weight: 100;
+    font-family: SupplyMono-Regular;
+    font-size: 19pt;
   }
 
   a
@@ -146,15 +138,5 @@ img
   }
 }
 
-@media(max-width: 500px)
-{
-  .container
-  {
-    width: 100%;
-    grid-template-columns: repeat(1, auto);
-  }
-  .item
-  {
-    grid-column: 1;
-  }
-}
+// Import media Queiries
+@import 'media';

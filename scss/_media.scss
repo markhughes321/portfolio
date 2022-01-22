@@ -1,0 +1,22 @@
+// Tablets & smaller
+@media(max-width: 800px)
+{
+  .container
+  {
+    width: 100%;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media(max-width: 500px)
+{
+  .container
+  {
+    width: 100%;
+    grid-template-columns: repeat(1, auto);
+  }
+  .item
+  {
+    grid-column: 1;
+  }
+}
