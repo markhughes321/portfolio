@@ -3,7 +3,8 @@
   padding-top: 3rem;
   margin: auto;
   overflow: hidden;
-  text-align: center; }
+  text-align: center;
+  border: #ccc 1px solid; }
   .container-nav ul,
   .container-nav li {
     text-align: center;
@@ -16,12 +17,14 @@
   grid-template-columns: 1.5fr 2fr 1fr;
   align-content: center;
   padding-left: 4rem;
-  padding-right: 4rem; }
+  padding-right: 4rem;
+  border: #ccc 1px solid; }
 
 .section {
   display: grid;
   grid-gap: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: #ccc 1px solid; }
   .section-c h4 {
     margin-bottom: 20px; }
 
@@ -36,6 +39,7 @@
     grid-column: 1 / span 2;
     text-align: justify; }
   .item .expirience {
+    border: #ccc 1px solid;
     grid-gap: 1rem;
     padding-top: 10px;
     padding-bottom: 10px; }
