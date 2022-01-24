@@ -26,6 +26,7 @@
     margin-bottom: 20px; }
 
 .item {
+  border: #ccc 1px solid;
   text-align: left;
   align-items: center;
   line-height: normal; }
@@ -137,27 +138,32 @@ img {
   border-bottom: 1px transparent solid; }
 
 @media (max-width: 920px) {
-  .container {
-    width: 100%;
-    flex-direction: column;
-    grid-template-columns: repeat(1, auto);
-    background: url("../img/background.png") repeat center right/cover; }
-  .item {
-    text-align: left;
-    align-items: center;
-    line-height: normal; }
-    .item-3 li {
-      display: inline; }
-    .item-4 {
-      grid-column: 1 / span 2;
-      text-align: justify; }
-    .item-8 {
-      margin-top: 65px;
-      grid-column: 2 / span 1; } }
+  h1:after {
+    display: none; } }
 
 @media (max-width: 500px) {
-  .container {
-    width: 100%;
-    grid-template-columns: repeat(1, auto); }
-  .item {
-    grid-column: 1; } }
+  body {
+    background: #232323; }
+  .container-nav {
+    height: 7rem;
+    padding-top: 1rem; }
+    .container-nav ul,
+    .container-nav li {
+      padding: 1rem; }
+  .container-resume {
+    grid-template-columns: 1fr;
+    padding: 1rem; }
+    .container-resume .section {
+      display: block; }
+    .container-resume .item {
+      margin-top: 20px; }
+      .container-resume .item h1 {
+        font-size: 52pt; }
+      .container-resume .item p {
+        text-align: left; }
+      .container-resume .item h2,
+      .container-resume .item h3,
+      .container-resume .item h4 {
+        margin-bottom: auto; }
+      .container-resume .item-3 h4 {
+        font-size: 15pt; } }

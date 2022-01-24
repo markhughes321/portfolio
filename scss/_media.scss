@@ -1,51 +1,112 @@
+// {
+// .container
+// {
+//     width: 100%;
+//     flex-direction: column;
+//     grid-template-columns: repeat(1, auto);
+//     background: $bg-image repeat center right / cover;
+// }
+
+// .item
+// {
+//     text-align: left;
+//     align-items: center;
+//     line-height: normal;
+
+//     &-3
+//     {
+//       li
+//       {
+//         display: inline;
+//       }
+//     }
+
+//     &-4
+//     {
+//       grid-column: 1 / span 2;
+//       text-align: justify;
+//     }
+//     &-8
+//     {
+//       margin-top: 65px;
+//       grid-column: 2 / span 1;
+//     }
+// }
+// }
+
 // Tablets & smaller
 @media(max-width: 920px)
 {
-  .container
+  h1
   {
-    width: 100%;
-    flex-direction: column;
-    grid-template-columns: repeat(1, auto);
-    background: $bg-image repeat center right / cover;
-  }
-
-  .item
-  {
-    // border: #ccc 1px solid;
-    text-align: left;
-    align-items: center;
-    line-height: normal;
-
-    &-3
+    &:after
     {
-      li
-      {
-        display: inline;
-      }
-    }
+      display: none;
 
-    &-4
-    {
-      grid-column: 1 / span 2;
-      text-align: justify;
-    }
-    &-8
-    {
-      margin-top: 65px;
-      grid-column: 2 / span 1;
     }
   }
 }
 
+// Smartphones
 @media(max-width: 500px)
 {
+  body
+  {
+    background: $dark-color;
+  }
+
   .container
   {
-    width: 100%;
-    grid-template-columns: repeat(1, auto);
-  }
-  .item
-  {
-    grid-column: 1;
+    &-nav
+    {
+      height: 7rem;
+      padding-top: 1rem;
+
+      ul,
+      li
+      {
+        padding: 1rem;
+      }
+    }
+    &-resume
+    {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+
+      .section
+      {
+        display: block;
+      }
+
+      .item
+      {
+        margin-top: 20px;
+
+        h1
+        {
+          font-size: 52pt;
+        }
+
+        p
+        {
+          text-align: left;
+        }
+
+        h2,
+        h3,
+        h4
+        {
+          margin-bottom: auto;
+        }
+
+        &-3
+        {
+          h4
+          {
+            font-size: 15pt;
+          }
+        }
+      }
+    }
   }
 }
