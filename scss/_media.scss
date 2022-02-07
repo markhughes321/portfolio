@@ -1,54 +1,5 @@
-// {
-// .container
-// {
-//     width: 100%;
-//     flex-direction: column;
-//     grid-template-columns: repeat(1, auto);
-//     background: $bg-image repeat center right / cover;
-// }
-
-// .item
-// {
-//     text-align: left;
-//     align-items: center;
-//     line-height: normal;
-
-//     &-3
-//     {
-//       li
-//       {
-//         display: inline;
-//       }
-//     }
-
-//     &-4
-//     {
-//       grid-column: 1 / span 2;
-//       text-align: justify;
-//     }
-//     &-8
-//     {
-//       margin-top: 65px;
-//       grid-column: 2 / span 1;
-//     }
-// }
-// }
-
 // Tablets & smaller
 @media(max-width: 920px)
-{
-  h1
-  {
-    &:after
-    {
-      display: none;
-
-    }
-  }
-}
-
-// Smartphones
-@media(max-width: 500px)
 {
   body
   {
@@ -57,34 +8,77 @@
 
   .container
   {
-    &-nav
-    {
-      height: 7rem;
-      padding-top: 1rem;
-
-      ul,
-      li
-      {
-        padding: 1rem;
-      }
-    }
     &-resume
     {
       grid-template-columns: 1fr;
       padding: 1rem;
+      grid-gap: 0;
 
       .section
       {
+        padding: 0.5;
         display: block;
+
+        &-b,
+        &-c
+        {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
       }
 
       .item
       {
-        margin-top: 20px;
+        padding-top: 20px;
+
+        &-8
+        {
+          padding-top: 87px;
+        }
+        &-9
+        {
+          margin-bottom: 70px;
+        }
+      }
+    }
+  }
+
+  // Smartphones
+  @media(max-width: 500px)
+  {
+    .container
+    {
+      &-nav
+      {
+        height: 7rem;
+        padding-top: 1rem;
+
+        ul,
+        li
+        {
+          padding: 1rem;
+        }
+      }
+      &-resume
+      {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        grid-gap: 0;
+
+        .section
+        {
+          padding: 0.5;
+          display: block;
+        }
 
         h1
         {
           font-size: 52pt;
+
+          &:after
+          {
+            display: none;
+          }
         }
 
         p
@@ -105,6 +99,17 @@
           {
             font-size: 15pt;
           }
+        }
+
+        &-3,
+        &-6
+        {
+          border-bottom: $alt-color 1px solid;
+          padding-bottom: 1rem;
+        }
+        &-8
+        {
+          padding-top: 20px;
         }
       }
     }

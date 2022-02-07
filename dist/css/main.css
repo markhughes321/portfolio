@@ -3,8 +3,7 @@
   padding-top: 3rem;
   margin: auto;
   overflow: hidden;
-  text-align: center;
-  border: #ccc 1px solid; }
+  text-align: center; }
   .container-nav ul,
   .container-nav li {
     text-align: center;
@@ -17,19 +16,16 @@
   grid-template-columns: 1.5fr 2fr 1fr;
   align-content: center;
   padding-left: 4rem;
-  padding-right: 4rem;
-  border: #ccc 1px solid; }
+  padding-right: 4rem; }
 
 .section {
   display: grid;
   grid-gap: 1rem;
-  padding: 1rem;
-  border: #ccc 1px solid; }
+  padding: 1rem; }
   .section-c h4 {
     margin-bottom: 20px; }
 
 .item {
-  border: #ccc 1px solid;
   text-align: left;
   align-items: center;
   line-height: normal; }
@@ -39,7 +35,6 @@
     grid-column: 1 / span 2;
     text-align: justify; }
   .item .expirience {
-    border: #ccc 1px solid;
     grid-gap: 1rem;
     padding-top: 10px;
     padding-bottom: 10px; }
@@ -142,12 +137,26 @@ img {
   border-bottom: 1px transparent solid; }
 
 @media (max-width: 920px) {
-  h1:after {
-    display: none; } }
-
-@media (max-width: 500px) {
   body {
     background: #232323; }
+  .container-resume {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    grid-gap: 0; }
+    .container-resume .section {
+      padding: 0.5;
+      display: block; }
+      .container-resume .section-b, .container-resume .section-c {
+        display: grid;
+        grid-template-columns: 1fr 1fr; }
+    .container-resume .item {
+      padding-top: 20px; }
+      .container-resume .item-8 {
+        padding-top: 87px; }
+      .container-resume .item-9 {
+        margin-bottom: 70px; } }
+
+@media (max-width: 920px) and (max-width: 500px) {
   .container-nav {
     height: 7rem;
     padding-top: 1rem; }
@@ -156,18 +165,25 @@ img {
       padding: 1rem; }
   .container-resume {
     grid-template-columns: 1fr;
-    padding: 1rem; }
+    padding: 1rem;
+    grid-gap: 0; }
     .container-resume .section {
+      padding: 0.5;
       display: block; }
-    .container-resume .item {
-      margin-top: 20px; }
-      .container-resume .item h1 {
-        font-size: 52pt; }
-      .container-resume .item p {
-        text-align: left; }
-      .container-resume .item h2,
-      .container-resume .item h3,
-      .container-resume .item h4 {
-        margin-bottom: auto; }
-      .container-resume .item-3 h4 {
-        font-size: 15pt; } }
+    .container-resume h1 {
+      font-size: 52pt; }
+      .container-resume h1:after {
+        display: none; }
+    .container-resume p {
+      text-align: left; }
+    .container-resume h2,
+    .container-resume h3,
+    .container-resume h4 {
+      margin-bottom: auto; }
+    .container-resume-3 h4 {
+      font-size: 15pt; }
+    .container-resume-3, .container-resume-6 {
+      border-bottom: #ff0 1px solid;
+      padding-bottom: 1rem; }
+    .container-resume-8 {
+      padding-top: 20px; } }
