@@ -40,11 +40,10 @@ a
 {
   color: $light-color;
   text-decoration: none;
-  @extend %hover-shared;
 
   &:hover
   {
-    color: $alt-color;
+    text-decoration: line-through $alt-color 1px;
   }
 }
 

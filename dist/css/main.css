@@ -58,21 +58,21 @@ body {
   color: #C8C8C8;
   word-spacing: -5px; }
 
-a, #main-nav a {
+#main-nav a {
   text-decoration: none;
   color: #C8C8C8;
   padding-bottom: 0.5rem;
   transition: border-color 1s; }
-  a:hover, #main-nav a:hover {
+  #main-nav a:hover {
     border-color: #ff0; }
-  a.current, #main-nav a.current {
+  #main-nav a.current {
     border-color: #ff0; }
 
 a {
   color: #C8C8C8;
   text-decoration: none; }
   a:hover {
-    color: #ff0; }
+    text-decoration: line-through #ff0 1px; }
 
 ul {
   list-style: none;
@@ -138,7 +138,7 @@ img {
 
 @media (max-width: 920px) {
   body {
-    background: #232323; }
+    background: #20201E; }
   .container-resume {
     grid-template-columns: 1fr;
     padding: 1rem;
