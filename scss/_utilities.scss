@@ -3,13 +3,11 @@
   padding: 6rem;
   height: 100vh;
   width:  100vw;
-
   &-resume
   {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1.7fr 1fr;
-    // border: #ccc 1px solid;
   }
 }
 
@@ -19,15 +17,15 @@
   grid-gap: 1.2rem;
   height: fit-content;
   padding-bottom: 2rem;
-  // border: #ccc 1px solid;
+  
   &-b {
     display: grid;
-
   }
+  
   &-c
   {
     justify-content: center;
-
+    
     h4
     {
       margin-bottom: 20px;
@@ -37,33 +35,32 @@
 
 .item
 {
-  // border: #ccc 1px solid;
   text-align: left;
   line-height: normal;
-
+  
   &-3
   {
+  
     li
     {
       display: inline;
     }
   }
-
+  
   &-4
   {
     grid-column: 1 / span 2;
     text-align: justify;
   }
+  
   &-7
   {
     padding-top: 2rem;
   }
-
+  
   .expirience
   {
-    // border: #ccc 1px solid;
     grid-gap: 1rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
   }
 }
