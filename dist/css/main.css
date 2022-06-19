@@ -1,39 +1,34 @@
-.container-nav {
-  max-width: 1280px;
-  padding-top: 3rem;
-  margin: auto;
-  overflow: hidden;
-  text-align: center; }
-  .container-nav ul,
-  .container-nav li {
-    text-align: center;
-    justify-content: center;
-    padding: 0.5rem 3rem; }
-
-.container-resume {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1.5fr 2fr 1fr;
-  align-content: center;
-  padding-left: 4rem;
-  padding-right: 4rem; }
+.container {
+  padding: 6rem;
+  height: 100vh;
+  width: 100vw; }
+  .container-resume {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1.7fr 1fr; }
 
 .section {
   display: grid;
-  grid-gap: 1rem;
-  padding: 1rem; }
-  .section-c h4 {
-    margin-bottom: 20px; }
+  grid-gap: 1.2rem;
+  height: fit-content;
+  padding-bottom: 2rem; }
+  .section-b {
+    display: grid; }
+  .section-c {
+    justify-content: center; }
+    .section-c h4 {
+      margin-bottom: 20px; }
 
 .item {
   text-align: left;
-  align-items: center;
   line-height: normal; }
   .item-3 li {
     display: inline; }
   .item-4 {
     grid-column: 1 / span 2;
     text-align: justify; }
+  .item-7 {
+    padding-top: 2rem; }
   .item .expirience {
     grid-gap: 1rem;
     padding-top: 10px;
@@ -54,19 +49,12 @@
 
 body {
   background: url("../img/background.png") no-repeat center right/cover;
-  height: 100vh;
   color: #C8C8C8;
   word-spacing: -5px; }
 
-#main-nav a {
-  text-decoration: none;
-  color: #C8C8C8;
-  padding-bottom: 0.5rem;
-  transition: border-color 1s; }
-  #main-nav a:hover {
-    border-color: #ff0; }
-  #main-nav a.current {
-    border-color: #ff0; }
+img {
+  width: 100%;
+  height: auto; }
 
 a {
   color: #C8C8C8;
@@ -78,20 +66,16 @@ ul {
   list-style: none;
   font-family: SupplyMono-Ultralight; }
 
-#logo {
-  width: 90px;
-  margin-top: -22px; }
-
 p {
   font-family: SupplyMono-Regular;
-  font-size: 17pt;
+  font-size: 1.1rem;
   line-height: 25px;
   font-weight: 400;
   letter-spacing: -1.2px; }
 
 h1 {
   font-family: SupplyMono-Ultralight;
-  font-size: 68pt;
+  font-size: 4rem;
   display: flex; }
   h1:after {
     content: "";
@@ -103,38 +87,18 @@ h1 {
 h2,
 h3 {
   font-family: SupplyMono-Ultralight;
-  font-size: 30pt;
+  font-size: 2.1rem;
   font-weight: 600;
   margin-bottom: 20px; }
 
 h4,
 h5 {
   font-family: SupplyMono-Ultralight;
-  font-size: 18pt;
+  font-size: 1.2rem;
   font-weight: 600; }
 
 h5 {
   font-weight: 100; }
-
-h6 {
-  font-family: SupplyMono-Ultralight;
-  font-size: 20pt;
-  font-weight: 100;
-  margin-bottom: 20px; }
-
-img {
-  width: 100%; }
-
-#main-nav ul {
-  display: flex; }
-
-#main-nav li {
-  font-family: SupplyMono-Regular;
-  font-size: 19pt; }
-
-#main-nav a {
-  text-transform: uppercase;
-  border-bottom: 1px transparent solid; }
 
 @media (max-width: 920px) {
   body {
