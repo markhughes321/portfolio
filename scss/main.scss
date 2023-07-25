@@ -1,6 +1,7 @@
 @import "config";
 @import "utilities";
 @import "fonts";
+@import 'media';
 
 // General Styles
 *
@@ -12,39 +13,72 @@
 
 body
 {
-  background: $bg-image no-repeat center right / cover;
-  color: $light-color;
-  word-spacing: -5px;
+  background: $black;
+  color: $white;
+  height: 100vh;
+  width: 100vw;
 }
 
-img
-{
-  width: 100%;
-  height: auto;
+main {
+  padding: 6rem;
+  border: 2px solid yellow;
+  display: flex;
+  flex-direction: column;
 }
 
-%hover-shared
+h1
 {
-  text-decoration: none;
-  color: $light-color;
-  padding-bottom: 0.5rem;
-  transition: border-color 1s;
+  font-family: Acumin Pro;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
 
-  &:hover
-  {
-    border-color: $alt-color;
-  }
+h2,
+h3
+{
+  font-family: Acumin Pro;
+  font-size: 1rem;
+}
 
-  &.current
-  {
-    border-color: $alt-color;
-  }
+.heading-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem 2rem 6rem;
+  border: 2px solid yellow;
+}
+
+.menu-pages {
+  border: 2px solid yellow;
+}
+
+.social-icons {
+  padding: 1rem;
+  display: flex;
+}
+
+.social-icon {
+  margin-left: 20px;
+}
+
+.services p {
+  font-family: Acumin Pro;
+  font-size: 4rem;
+  line-height: 60px;
+  letter-spacing: 1px;
+}
+
+.expirience p
+{
+  font-family: Acumin Pro;
+  font-size: 1rem;
 }
 
 a
 {
-  color: $light-color;
+  color: $white;
   text-decoration: none;
+  font-family: Acumin Pro;
 
   &:hover
   {
@@ -54,56 +88,14 @@ a
 
 ul
 {
-  list-style: none;
-  font-family: SupplyMono-Ultralight;
-}
-
-p
-{
-  font-family: SupplyMono-Regular;
-  font-size: 1.1rem;
-  line-height: 25px;
-  font-weight: 400;
-  letter-spacing: -1.2px;
-}
-
-h1
-{
-  font-family: SupplyMono-Ultralight;
-  font-size: 4rem;
-  display: flex;
-
-  &:after
-  {
-    content: "";
-    flex: 1 1;
-    border-bottom: 1px solid;
-    margin: auto;
-    color: $alt-color;
+  list-style: none; 
+  
+  .menu-pages & {
+    display: flex;
   }
 }
 
-h2,
-h3
-{
-  font-family: SupplyMono-Ultralight;
-  font-size: 2.1rem;
-  font-weight: 600;
-  margin-bottom: 20px;
+.menu-pages li 
+{  
+  padding: 40px;
 }
-
-h4,
-h5
-{
-  font-family: SupplyMono-Ultralight;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-h5
-{
-  font-weight: 100;
-}
-
-
-@import 'media';

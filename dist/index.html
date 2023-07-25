@@ -1,93 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/jpg" href="../dist/img/logo.png"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://kit.fontawesome.com/e2b8a417b3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="typewriter.js"></script>
     <title>Mark Hughes | Software Engineer</title>
   </head>
-  <body> 
-    <div class="container container-resume">
-      <div class="section section-a">
-        <div class="item item-1">
-          <img src="img/overlay.jpeg" alt="">
-        </div>
-        <div class="item item-2">
-          <h3>mark hughes</h3>
-          <p>tech enthusiast. coffee lover. always learning and working on my jumpshot.</p>
-          </div>
-          <div class="item item-3">
-            <ul class="socials">
-              <li><h4><i class="fas fa-map-marker"></i> london, uk </h4></li>
-              <li><h4>Em. <a href="mailto:markhughes321@gmail.com">drop me an email</a></h4></li>
-              <li><h4>Li. <a href="https://www.linkedin.com/in/markhughes321/">connect on LinkedIn</a></h4></li>
-              <li><h4>Gi. <a href="https://github.com/markhughes321">view my GitHub repos</a></h4></li>
-            </ul>
-          </div>
-        </div>
-        <div class="section section-b">
-          <div class="item item-4">
-            <h1>about.</h1>
-            <p>Hey, and welcome to my online portfolio! I've been building this website over the past few weeks 
-              and I'm delighted to push the first version out! It's coded using HTML and CSS, It's my first open source project so 
-              feel free to check the code out <a href="https://github.com/markhughes321/portfolio-website">here</a>.
-              <br><br> Day-to-day, I'm a Software Engineer at a leading Art-Tech company in London. Alongside my day job, I'm always looking for
-               for new exciting projects to collaborate on and different ways to improve my skill set. At the moment my focus is on learning Typescript, 
-               React and GraphQL. I probablly rewrite this website using that tech stack in the near future. Anyway, have a nice day & thanks for checking out
-               my portfolio. 19-06-22</p>
-          </div>
-          <div class="item item-5">
-            <h2>experience</h2>
-              <div class="expirience">
-                <h4>Software Engineer</h4>
-                <h5>Art-Tech</h5>
-                <h5>Present</h5>
-              </div>
-              <div class="expirience">
-                <h4>Test Automation Engineer</h4>
-                <h5>Fintech</h5>
-                <h5>2020-2022</h5>
-              </div>
-              <div class="expirience">
-                <h4>Quality Assusarnce</h4>
-                <h5>Aviation</h5>
-                <h5>2017-2020</h5>
-              </div>
-          </div>
-          <div class="item item-6">
-            <h2>education</h2>
-            <div class="education">
-              <h4>BSc Enterprise Computing</h4>
-              <h5>Dublin City University</h5>
-              <h5>2012-2016</h5>
-            </div>
-          </div>
-        </div>
-        <div class="section section-c">
-          <div class="item item-7">
-            <ul class="skills">
-              <li><h2>more</h2></li>
-              <li><h4>open source</h4></li>
-              <li><h5><a href="https://github.com/markhughes321/portfolio-website">portfolio-website</a></h5></li>
-              <li><h5><a href="https://github.com/markhughes321/react-task-tracker">react-analytics-dashboard</a></h5></li>
-              <li><h5><a href="https://github.com/markhughes321/react-analytics-dashboard">react-task-tracker</a></h5></li>
-              <li><h5><a href="https://github.com/markhughes321/cypress-automation-e2e">cypress-template</a></h5></li>
-              <li><h5><a href="https://github.com/markhughes321/karate-api-testing">karate-api-template</a></h5></li>
-            </ul>
-          </div>
-          <div class="item item-8">
-            <ul class="skills">
-              <li><h4>recent courses</h4></li>
-              <li><h5><a href="https://scrimba.com/learn/learnreact">Learn React JS</a></h5></li>
-              <li><h5><a href="https://www.udemy.com/certificate/UC-b92cae60-e4ba-4f59-9a86-4fb207633cfd/">Karate DSL: API Automation</a></h5></li>
-              <li><h5><a href="https://www.udemy.com/certificate/UC-b92cae60-e4ba-4f59-9a86-4fb207633cfd/">Modern Javascript</a></h5></li>
-              <li><h5><a href="https://www.udemy.com/certificate/UC-b92cae60-e4ba-4f59-9a86-4fb207633cfd/">Modern HTML & CSS</a></h5></li>
-              <li><h5><a href="https://www.udemy.com/certificate/UC-b92cae60-e4ba-4f59-9a86-4fb207633cfd/">Protractor Automation</a></h5></li>
-            </ul>
-          </div>
-        </div>
+  <body>
+    <header class="heading-menu">
+
+      <div class="logo">
+        <h1>Mark Hughes & Co</h1>
       </div>
+
+      <div class="menu-pages">
+        <ul>
+          <li><a href="/service-1">Services</a></li>
+          <li><a href="/service-2">Projects</a></li>
+          <li><a href="/service-3">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://github.com/markhughes321" class="social-icon" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/markhughes321/" class="social-icon" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+    </header>
+    <main>
+      <section class="services">
+        <div class="container">
+          <p>I can help you improve the user experience and overall quality of your website, making it more appealing and user-friendly.</p>
+        </div>
+      </section>
+
+      <section class="expirience">
+        <div class="container">
+          <h2>Experience</h2>
+          <div class="job">
+            <h3>Quality Assurance Lead</h3>
+            <p>Art-Tech</p>
+            <p>Present</p>
+          </div>
+          <div class="job">
+            <h3>Test Automation Engineer</h3>
+            <p>Fintech</p>
+            <p>2020-2022</p>
+          </div>
+          <div class="job">
+            <h3>Quality Assusarnce</h3>
+            <p>Aviation</p>
+            <p>2017-2020</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
-  </html>
+</html>

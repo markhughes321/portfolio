@@ -3,7 +3,7 @@
 {
   body
   {
-    background: $dark-color;
+    background: $black;
   }
 
   .container
@@ -19,25 +19,10 @@
         padding: 0.5;
         display: block;
 
-        &-b,
-        &-c
+        &-b
         {
           display: grid;
           grid-template-columns: 1fr 1fr;
-        }
-      }
-
-      .item
-      {
-        padding-top: 20px;
-
-        &-8
-        {
-          padding-top: 87px;
-        }
-        &-9
-        {
-          margin-bottom: 70px;
         }
       }
     }

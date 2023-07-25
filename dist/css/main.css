@@ -1,107 +1,39 @@
 .container {
-  padding: 6rem;
-  height: 100vh;
-  width: 100vw; }
-  .container-resume {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1.7fr 1fr; }
-
-.section {
   display: grid;
-  grid-gap: 1.2rem;
-  height: fit-content;
-  padding-bottom: 2rem; }
-  .section-b {
-    display: grid; }
-  .section-c {
-    justify-content: center; }
-    .section-c h4 {
-      margin-bottom: 20px; }
+  grid-gap: 1rem;
+  border: 2px solid yellow; }
 
-.item {
-  text-align: left;
-  line-height: normal; }
-  .item-3 li {
-    display: inline; }
-  .item-4 {
-    grid-column: 1 / span 2;
-    text-align: justify; }
-  .item-7 {
-    padding-top: 2rem; }
-  .item .expirience {
-    grid-gap: 1rem;
-    padding-bottom: 1rem; }
+.expirience {
+  display: flex;
+  justify-content: flex-end; }
 
 @font-face {
-  font-family: 'SupplyMono-Ultralight';
-  src: url("../fonts/PPSupplyMono-Ultralight.otf"); }
+  font-family: 'Acumin Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro"), url("../fonts/Acumin-RPro.woff") format("woff"); }
 
 @font-face {
-  font-family: 'SupplyMono-Regular';
-  src: url("../fonts/PPSupplyMono-Regular.otf"); }
+  font-family: 'Acumin Pro Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro Italic"), url("../fonts/Acumin-ItPro.woff") format("woff"); }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+@font-face {
+  font-family: 'Acumin Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro Bold"), url("../fonts/Acumin-BdPro.woff") format("woff"); }
 
-body {
-  background: url("../img/background.png") no-repeat center right/cover;
-  color: #C8C8C8;
-  word-spacing: -5px; }
-
-img {
-  width: 100%;
-  height: auto; }
-
-a {
-  color: #C8C8C8;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: line-through #ff0 1px; }
-
-ul {
-  list-style: none;
-  font-family: SupplyMono-Ultralight; }
-
-p {
-  font-family: SupplyMono-Regular;
-  font-size: 1.1rem;
-  line-height: 25px;
-  font-weight: 400;
-  letter-spacing: -1.2px; }
-
-h1 {
-  font-family: SupplyMono-Ultralight;
-  font-size: 4rem;
-  display: flex; }
-  h1:after {
-    content: "";
-    flex: 1 1;
-    border-bottom: 1px solid;
-    margin: auto;
-    color: #ff0; }
-
-h2,
-h3 {
-  font-family: SupplyMono-Ultralight;
-  font-size: 2.1rem;
-  font-weight: 600;
-  margin-bottom: 20px; }
-
-h4,
-h5 {
-  font-family: SupplyMono-Ultralight;
-  font-size: 1.2rem;
-  font-weight: 600; }
-
-h5 {
-  font-weight: 100; }
+@font-face {
+  font-family: 'Acumin Pro Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro Bold Italic"), url("../fonts/Acumin-BdItPro.woff") format("woff"); }
 
 @media (max-width: 920px) {
   body {
-    background: #20201E; }
+    background: #000000; }
   .container-resume {
     grid-template-columns: 1fr;
     padding: 1rem;
@@ -109,15 +41,9 @@ h5 {
     .container-resume .section {
       padding: 0.5;
       display: block; }
-      .container-resume .section-b, .container-resume .section-c {
+      .container-resume .section-b {
         display: grid;
-        grid-template-columns: 1fr 1fr; }
-    .container-resume .item {
-      padding-top: 20px; }
-      .container-resume .item-8 {
-        padding-top: 87px; }
-      .container-resume .item-9 {
-        margin-bottom: 70px; } }
+        grid-template-columns: 1fr 1fr; } }
 
 @media (max-width: 920px) and (max-width: 500px) {
   .container-nav {
@@ -150,3 +76,72 @@ h5 {
       padding-bottom: 1rem; }
     .container-resume-8 {
       padding-top: 20px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #000000;
+  color: #ffffff;
+  height: 100vh;
+  width: 100vw; }
+
+main {
+  padding: 6rem;
+  border: 2px solid yellow;
+  display: flex;
+  flex-direction: column; }
+
+h1 {
+  font-family: Acumin Pro;
+  font-size: 2rem;
+  letter-spacing: 1px; }
+
+h2,
+h3 {
+  font-family: Acumin Pro;
+  font-size: 1rem; }
+
+.heading-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem 2rem 6rem;
+  border: 2px solid yellow; }
+
+.menu-pages {
+  border: 2px solid yellow; }
+
+.social-icons {
+  padding: 1rem;
+  display: flex; }
+
+.social-icon {
+  margin-left: 20px; }
+
+.services p {
+  font-family: Acumin Pro;
+  font-size: 4rem;
+  line-height: 60px;
+  letter-spacing: 1px; }
+
+.expirience p {
+  font-family: Acumin Pro;
+  font-size: 1rem; }
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Acumin Pro; }
+  a:hover {
+    text-decoration: line-through #ff0 1px; }
+
+ul {
+  list-style: none; }
+  .menu-pages ul {
+    display: flex; }
+
+.menu-pages li {
+  padding: 40px; }
