@@ -1,156 +1,84 @@
-@import "config";
-@import "utilities";
-@import "fonts";
 @import 'media';
-
-// General Styles
-*
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body
-{
-  background: $black;
-  color: $white;
-  height: 100vh;
-  width: 100vw;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
-  width: 100%;
-  height: 70px;
-  padding: 0rem 6rem;
-  position: fixed;
-  top: 0px;
-  flex-wrap: wrap;
-  border: $border;
-  // display: grid;
-  // grid-template-columns: 3fr 2fr 1fr;
-  // width: 100%;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  border: $border;
-}
-
-.navbar a {
-  padding: 10px 20px;
-  margin: 0px 5px;
-}
-
-.navbar {
-  .social-icons {
-    margin: 10px 2px;
-  }
-}
-
-.logo {
-  border: $border;
-}
-
-/* Main */
-main {
-  display: grid;
-  padding: 6rem;
-  height: 100%;
-  border: $border;
-}
+@import "config";
+@import "defaults";
+@import "fonts";
 
 .container {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 2rem;
-  border: $border;
+  grid-template-areas:
+    'navbar navbar navbar'
+    'services services expirience'
+    'footer footer footer';
+  grid-gap: 1rem;
+}
+
+.navbar {
+  grid-area: navbar;
+  display: grid;
+  grid-template-columns: 6fr 3fr 1fr;
+  align-items: center;
+  padding: 1rem 6rem;
+
+  ul {
+    display: flex;
+  }
+  
+  li {
+    padding: .75rem;
+  }
+}
+
+.socials {
+  justify-self: end;
 }
 
 .services {
+  grid-area: services;
   display: flex;
-  border: $border;
-  align-items: end;
-
-  p {
-    font-family: Acumin Pro;
-    font-size: 3rem;
-    line-height: 60px;
-  }
+  padding: 1rem 6rem;
+  align-items: flex-end;
+  height: 60vh;
 }
 
 .expirience {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  border: $border;
-  align-content:center;
-
-  h2 {
-    padding-bottom: 5px;
-  }
-
-  h3 {
-    font-size: 12px;
-  }
-
-  p {
-    font-family: Acumin Pro;
-    font-size: 12px;
-  }
+  grid-area: expirience;
+  padding: 1rem 6rem;
 }
 
-.job {
-  align-content: end;
-  padding: 10px 0px;
+.jobs {
+  padding: .5rem 0rem;
 }
 
-.work-together {
+.footer {
+  grid-area: footer;
   display: flex;
-  justify-content: end;
   align-items: flex-end;
-  align-content: center;
-  border: $border;
-}
+  justify-content: end;
+  padding: 1rem 6rem;
 
-/* Fonts */
-h1
-{
-  font-family: Acumin Pro;
-  font-size: 2rem;
-  letter-spacing: 1px;
-}
+  a {
+    display: flex;
 
-h2
-{
-  font-family: Acumin Pro;
-  font-size: 1rem;
-}
-
-h3
-{
-  font-family: Acumin Pro;
-  font-size: 1rem;
-}
-
-p {
-  font-family: Acumin Pro;
-  font-size: 16px;
-}
-
-a
-{
-  color: $white;
-  text-decoration: none;
-  font-family: Poppins Extra Light;
-
-  &:hover
-  {
-    text-decoration: line-through $alt-color 1px;
+    &:hover {
+      color: $alt-color;
+      text-decoration: none;
+    }
   }
+
+  i {
+    padding: .05rem .5rem;
+    font-size: 16px;
+  }
+}
+
+.navbar,
+.services,
+.expirience,
+.socials,
+i,
+p,
+.logo,
+.pages,
+.footer {
+  border: 0px #ccc solid;
 }

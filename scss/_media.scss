@@ -1,102 +1,20 @@
-// Tablets & smaller
-@media(max-width: 920px)
-{
-  body
-  {
-    background: $black;
-  }
+// // Tablets & smaller
+// @media(max-width: 920px)
+// {
 
-  .container
-  {
-    &-resume
-    {
-      grid-template-columns: 1fr;
-      padding: 1rem;
-      grid-gap: 0;
+// }
 
-      .section
-      {
-        padding: 0.5;
-        display: block;
+// Smartphones
+// @media(max-width: 600px)
+// {
+//   .container {
+//     display: grid;
+//     grid-template-areas:
+//       'navbar'
+//       'services'
+//       'expirience'
+//       'footer';
+//     grid-gap: 1rem;
+//   }
+// }
 
-        &-b
-        {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-    }
-  }
-
-  // Smartphones
-  @media(max-width: 500px)
-  {
-    .container
-    {
-      &-nav
-      {
-        height: 7rem;
-        padding-top: 1rem;
-
-        ul,
-        li
-        {
-          padding: 1rem;
-        }
-      }
-      &-resume
-      {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-        grid-gap: 0;
-
-        .section
-        {
-          padding: 0.5;
-          display: block;
-        }
-
-        h1
-        {
-          font-size: 52pt;
-
-          &:after
-          {
-            display: none;
-          }
-        }
-
-        p
-        {
-          text-align: left;
-        }
-
-        h2,
-        h3,
-        h4
-        {
-          margin-bottom: auto;
-        }
-
-        &-3
-        {
-          h4
-          {
-            font-size: 15pt;
-          }
-        }
-
-        &-3,
-        &-6
-        {
-          border-bottom: $alt-color 1px solid;
-          padding-bottom: 1rem;
-        }
-        &-8
-        {
-          padding-top: 20px;
-        }
-      }
-    }
-  }
-}
