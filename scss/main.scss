@@ -67,7 +67,6 @@
 
   i {
     padding: .05rem .5rem;
-    font-size: 16px;
   }
 }
 
@@ -80,5 +79,7 @@ p,
 .logo,
 .pages,
 .footer {
-  border: 0px #ccc solid;
+  border: 1px #ccc solid;
 }
+
+@import 'media';

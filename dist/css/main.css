@@ -1,3 +1,45 @@
+@media (max-width: 1045px) {
+  .container {
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar' 'services services services' 'expirience expirience footer';
+    grid-gap: 1rem; }
+  .services {
+    padding: 2rem 6rem;
+    height: auto; }
+  .expirience {
+    text-align: left;
+    padding: 1rem 0rem 1rem 6rem; }
+  .jobs {
+    display: flex;
+    padding: .2rem 0rem; }
+    .jobs p {
+      padding: 0rem 0rem 0rem .3rem; }
+  .footer {
+    padding: 1rem 6rem 1rem 0rem; } }
+
+@media (max-width: 740px) {
+  .container {
+    display: grid;
+    grid-template-areas: 'navbar' 'services' 'expirience' 'footer';
+    grid-gap: 1rem; }
+  .navbar {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-self: center;
+    padding: 0rem; }
+  .socials {
+    display: none; }
+  .services {
+    padding: .5rem 0rem;
+    height: auto; }
+    .services p {
+      font-size: 30px; }
+  .expirience {
+    padding: .5rem 0rem; }
+  .footer {
+    justify-content: left;
+    padding: .5rem 0rem; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +80,11 @@ a {
   font-family: Poppins Extra Light; }
   a:hover {
     text-decoration: line-through #ff0 1px; }
+
+i {
+  font-size: 16px; }
+  i:hover {
+    color: #ff0; }
 
 @font-face {
   font-family: 'Acumin Pro';
@@ -102,8 +149,7 @@ a {
       color: #ff0;
       text-decoration: none; }
   .footer i {
-    padding: .05rem .5rem;
-    font-size: 16px; }
+    padding: .05rem .5rem; }
 
 .navbar,
 .services,
@@ -114,4 +160,46 @@ p,
 .logo,
 .pages,
 .footer {
-  border: 0px #ccc solid; }
+  border: 1px #ccc solid; }
+
+@media (max-width: 1045px) {
+  .container {
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar' 'services services services' 'expirience expirience footer';
+    grid-gap: 1rem; }
+  .services {
+    padding: 2rem 6rem;
+    height: auto; }
+  .expirience {
+    text-align: left;
+    padding: 1rem 0rem 1rem 6rem; }
+  .jobs {
+    display: flex;
+    padding: .2rem 0rem; }
+    .jobs p {
+      padding: 0rem 0rem 0rem .3rem; }
+  .footer {
+    padding: 1rem 6rem 1rem 0rem; } }
+
+@media (max-width: 740px) {
+  .container {
+    display: grid;
+    grid-template-areas: 'navbar' 'services' 'expirience' 'footer';
+    grid-gap: 1rem; }
+  .navbar {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-self: center;
+    padding: 0rem; }
+  .socials {
+    display: none; }
+  .services {
+    padding: .5rem 0rem;
+    height: auto; }
+    .services p {
+      font-size: 30px; }
+  .expirience {
+    padding: .5rem 0rem; }
+  .footer {
+    justify-content: left;
+    padding: .5rem 0rem; } }
