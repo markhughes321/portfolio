@@ -1,117 +1,79 @@
 // Tablets & smaller
-@media(max-width: 920px)
+@media(max-width: 1045px)
 {
-  body
-  {
-    background: $dark-color;
+  .container {
+    display: grid;
+    grid-template-areas:
+      'navbar navbar navbar'
+      'services services services'
+      'expirience expirience footer';
+    grid-gap: 1rem;
   }
 
-  .container
-  {
-    &-resume
-    {
-      grid-template-columns: 1fr;
-      padding: 1rem;
-      grid-gap: 0;
+  .services {
+    padding: 2rem 6rem;
+    height: auto;
+  }
 
-      .section
-      {
-        padding: 0.5;
-        display: block;
+  .expirience {
+    text-align: left;
+    padding: 1rem 0rem 1rem 6rem;
+  }
 
-        &-b,
-        &-c
-        {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-        }
-      }
+  .jobs {
+    display: flex;
+    padding: .2rem 0rem;
 
-      .item
-      {
-        padding-top: 20px;
-
-        &-8
-        {
-          padding-top: 87px;
-        }
-        &-9
-        {
-          margin-bottom: 70px;
-        }
-      }
+    p {
+      padding: 0rem 0rem 0rem .3rem;
     }
   }
 
-  // Smartphones
-  @media(max-width: 500px)
-  {
-    .container
-    {
-      &-nav
-      {
-        height: 7rem;
-        padding-top: 1rem;
-
-        ul,
-        li
-        {
-          padding: 1rem;
-        }
-      }
-      &-resume
-      {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-        grid-gap: 0;
-
-        .section
-        {
-          padding: 0.5;
-          display: block;
-        }
-
-        h1
-        {
-          font-size: 52pt;
-
-          &:after
-          {
-            display: none;
-          }
-        }
-
-        p
-        {
-          text-align: left;
-        }
-
-        h2,
-        h3,
-        h4
-        {
-          margin-bottom: auto;
-        }
-
-        &-3
-        {
-          h4
-          {
-            font-size: 15pt;
-          }
-        }
-
-        &-3,
-        &-6
-        {
-          border-bottom: $alt-color 1px solid;
-          padding-bottom: 1rem;
-        }
-        &-8
-        {
-          padding-top: 20px;
-        }
-      }
-    }
+  .footer {
+    padding: 1rem 6rem 1rem 0rem;
   }
 }
+
+@media(max-width: 740px)
+{
+  .container {
+    display: grid;
+    grid-template-areas:
+      'navbar'
+      'services'
+      'expirience'
+      'footer';
+    grid-gap: 1rem;
+  }
+
+  .navbar {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-self: center;
+    padding: 0rem;
+  }
+  
+  .socials {
+    display: none;
+  }
+
+  .services {
+    padding: .5rem 0rem;
+    height: auto;
+
+    p {
+      font-size: 30px;
+    }
+  }
+
+  .expirience {
+    padding: .5rem 0rem;
+  }
+
+  .footer {
+    justify-content: left;
+    padding: .5rem 0rem;
+  }
+
+}
+

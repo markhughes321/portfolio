@@ -1,109 +1,85 @@
+@import 'media';
 @import "config";
-@import "utilities";
+@import "defaults";
 @import "fonts";
 
-// General Styles
-*
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.container {
+  display: grid;
+  grid-template-areas:
+    'navbar navbar navbar'
+    'services services expirience'
+    'footer footer footer';
+  grid-gap: 1rem;
 }
 
-body
-{
-  background: $bg-image no-repeat center right / cover;
-  color: $light-color;
-  word-spacing: -5px;
-}
+.navbar {
+  grid-area: navbar;
+  display: grid;
+  grid-template-columns: 6fr 3fr 1fr;
+  align-items: center;
+  padding: 1rem 6rem;
 
-img
-{
-  width: 100%;
-  height: auto;
-}
-
-%hover-shared
-{
-  text-decoration: none;
-  color: $light-color;
-  padding-bottom: 0.5rem;
-  transition: border-color 1s;
-
-  &:hover
-  {
-    border-color: $alt-color;
+  ul {
+    display: flex;
   }
-
-  &.current
-  {
-    border-color: $alt-color;
+  
+  li {
+    padding: .75rem;
   }
 }
 
-a
-{
-  color: $light-color;
-  text-decoration: none;
-
-  &:hover
-  {
-    text-decoration: line-through $alt-color 1px;
-  }
+.socials {
+  justify-self: end;
 }
 
-ul
-{
-  list-style: none;
-  font-family: SupplyMono-Ultralight;
-}
-
-p
-{
-  font-family: SupplyMono-Regular;
-  font-size: 1.1rem;
-  line-height: 25px;
-  font-weight: 400;
-  letter-spacing: -1.2px;
-}
-
-h1
-{
-  font-family: SupplyMono-Ultralight;
-  font-size: 4rem;
+.services {
+  grid-area: services;
   display: flex;
+  padding: 1rem 6rem;
+  align-items: flex-end;
+  height: 60vh;
+}
 
-  &:after
-  {
-    content: "";
-    flex: 1 1;
-    border-bottom: 1px solid;
-    margin: auto;
-    color: $alt-color;
+.expirience {
+  grid-area: expirience;
+  padding: 1rem 6rem;
+}
+
+.jobs {
+  padding: .5rem 0rem;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  padding: 1rem 6rem;
+
+  a {
+    display: flex;
+
+    &:hover {
+      color: $alt-color;
+      text-decoration: none;
+    }
+  }
+
+  i {
+    padding: .05rem .5rem;
   }
 }
 
-h2,
-h3
-{
-  font-family: SupplyMono-Ultralight;
-  font-size: 2.1rem;
-  font-weight: 600;
-  margin-bottom: 20px;
+.navbar,
+.services,
+.expirience,
+.socials,
+i,
+p,
+.logo,
+.pages,
+.footer {
+  border: 1px #ccc solid;
 }
-
-h4,
-h5
-{
-  font-family: SupplyMono-Ultralight;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-h5
-{
-  font-weight: 100;
-}
-
 
 @import 'media';

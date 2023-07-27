@@ -1,45 +1,44 @@
-.container {
-  padding: 6rem;
-  height: 100vh;
-  width: 100vw; }
-  .container-resume {
+@media (max-width: 1045px) {
+  .container {
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1.7fr 1fr; }
+    grid-template-areas: 'navbar navbar navbar' 'services services services' 'expirience expirience footer';
+    grid-gap: 1rem; }
+  .services {
+    padding: 2rem 6rem;
+    height: auto; }
+  .expirience {
+    text-align: left;
+    padding: 1rem 0rem 1rem 6rem; }
+  .jobs {
+    display: flex;
+    padding: .2rem 0rem; }
+    .jobs p {
+      padding: 0rem 0rem 0rem .3rem; }
+  .footer {
+    padding: 1rem 6rem 1rem 0rem; } }
 
-.section {
-  display: grid;
-  grid-gap: 1.2rem;
-  height: fit-content;
-  padding-bottom: 2rem; }
-  .section-b {
-    display: grid; }
-  .section-c {
-    justify-content: center; }
-    .section-c h4 {
-      margin-bottom: 20px; }
-
-.item {
-  text-align: left;
-  line-height: normal; }
-  .item-3 li {
-    display: inline; }
-  .item-4 {
-    grid-column: 1 / span 2;
-    text-align: justify; }
-  .item-7 {
-    padding-top: 2rem; }
-  .item .expirience {
-    grid-gap: 1rem;
-    padding-bottom: 1rem; }
-
-@font-face {
-  font-family: 'SupplyMono-Ultralight';
-  src: url("../fonts/PPSupplyMono-Ultralight.otf"); }
-
-@font-face {
-  font-family: 'SupplyMono-Regular';
-  src: url("../fonts/PPSupplyMono-Regular.otf"); }
+@media (max-width: 740px) {
+  .container {
+    display: grid;
+    grid-template-areas: 'navbar' 'services' 'expirience' 'footer';
+    grid-gap: 1rem; }
+  .navbar {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-self: center;
+    padding: 0rem; }
+  .socials {
+    display: none; }
+  .services {
+    padding: .5rem 0rem;
+    height: auto; }
+    .services p {
+      font-size: 30px; }
+  .expirience {
+    padding: .5rem 0rem; }
+  .footer {
+    justify-content: left;
+    padding: .5rem 0rem; } }
 
 * {
   margin: 0;
@@ -47,106 +46,160 @@
   box-sizing: border-box; }
 
 body {
-  background: url("../img/background.png") no-repeat center right/cover;
-  color: #C8C8C8;
-  word-spacing: -5px; }
+  background: #000000;
+  color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  border: 2px solid yellow;
+  padding: 1rem; }
 
-img {
-  width: 100%;
-  height: auto; }
+ul {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, p {
+  font-family: Acumin Pro; }
+
+h2 {
+  font-size: 12px; }
+
+h3 {
+  font-size: 12px;
+  text-align: right; }
+
+.expirience {
+  font-size: 12px;
+  text-align: right; }
+
+.services p {
+  font-size: 50px; }
 
 a {
-  color: #C8C8C8;
-  text-decoration: none; }
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Poppins Extra Light; }
   a:hover {
     text-decoration: line-through #ff0 1px; }
 
-ul {
-  list-style: none;
-  font-family: SupplyMono-Ultralight; }
-
-p {
-  font-family: SupplyMono-Regular;
-  font-size: 1.1rem;
-  line-height: 25px;
-  font-weight: 400;
-  letter-spacing: -1.2px; }
-
-h1 {
-  font-family: SupplyMono-Ultralight;
-  font-size: 4rem;
-  display: flex; }
-  h1:after {
-    content: "";
-    flex: 1 1;
-    border-bottom: 1px solid;
-    margin: auto;
+i {
+  font-size: 16px; }
+  i:hover {
     color: #ff0; }
 
-h2,
-h3 {
-  font-family: SupplyMono-Ultralight;
-  font-size: 2.1rem;
-  font-weight: 600;
-  margin-bottom: 20px; }
+@font-face {
+  font-family: 'Acumin Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro"), url("../fonts/Acumin/Acumin-RPro.woff") format("woff"); }
 
-h4,
-h5 {
-  font-family: SupplyMono-Ultralight;
-  font-size: 1.2rem;
-  font-weight: 600; }
+@font-face {
+  font-family: 'Poppins Extra Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Poppins Extra Light"), url("../fonts/Poppins/Poppins-ExtraLight.ttf") format("truetype"); }
 
-h5 {
-  font-weight: 100; }
+@font-face {
+  font-family: 'Acumin Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro Bold"), url("../fonts/Acumin/Acumin-BdPro.woff") format("woff"); }
 
-@media (max-width: 920px) {
-  body {
-    background: #20201E; }
-  .container-resume {
+.container {
+  display: grid;
+  grid-template-areas: 'navbar navbar navbar' 'services services expirience' 'footer footer footer';
+  grid-gap: 1rem; }
+
+.navbar {
+  grid-area: navbar;
+  display: grid;
+  grid-template-columns: 6fr 3fr 1fr;
+  align-items: center;
+  padding: 1rem 6rem; }
+  .navbar ul {
+    display: flex; }
+  .navbar li {
+    padding: .75rem; }
+
+.socials {
+  justify-self: end; }
+
+.services {
+  grid-area: services;
+  display: flex;
+  padding: 1rem 6rem;
+  align-items: flex-end;
+  height: 60vh; }
+
+.expirience {
+  grid-area: expirience;
+  padding: 1rem 6rem; }
+
+.jobs {
+  padding: .5rem 0rem; }
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  padding: 1rem 6rem; }
+  .footer a {
+    display: flex; }
+    .footer a:hover {
+      color: #ff0;
+      text-decoration: none; }
+  .footer i {
+    padding: .05rem .5rem; }
+
+.navbar,
+.services,
+.expirience,
+.socials,
+i,
+p,
+.logo,
+.pages,
+.footer {
+  border: 1px #ccc solid; }
+
+@media (max-width: 1045px) {
+  .container {
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar' 'services services services' 'expirience expirience footer';
+    grid-gap: 1rem; }
+  .services {
+    padding: 2rem 6rem;
+    height: auto; }
+  .expirience {
+    text-align: left;
+    padding: 1rem 0rem 1rem 6rem; }
+  .jobs {
+    display: flex;
+    padding: .2rem 0rem; }
+    .jobs p {
+      padding: 0rem 0rem 0rem .3rem; }
+  .footer {
+    padding: 1rem 6rem 1rem 0rem; } }
+
+@media (max-width: 740px) {
+  .container {
+    display: grid;
+    grid-template-areas: 'navbar' 'services' 'expirience' 'footer';
+    grid-gap: 1rem; }
+  .navbar {
     grid-template-columns: 1fr;
-    padding: 1rem;
-    grid-gap: 0; }
-    .container-resume .section {
-      padding: 0.5;
-      display: block; }
-      .container-resume .section-b, .container-resume .section-c {
-        display: grid;
-        grid-template-columns: 1fr 1fr; }
-    .container-resume .item {
-      padding-top: 20px; }
-      .container-resume .item-8 {
-        padding-top: 87px; }
-      .container-resume .item-9 {
-        margin-bottom: 70px; } }
-
-@media (max-width: 920px) and (max-width: 500px) {
-  .container-nav {
-    height: 7rem;
-    padding-top: 1rem; }
-    .container-nav ul,
-    .container-nav li {
-      padding: 1rem; }
-  .container-resume {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-    grid-gap: 0; }
-    .container-resume .section {
-      padding: 0.5;
-      display: block; }
-    .container-resume h1 {
-      font-size: 52pt; }
-      .container-resume h1:after {
-        display: none; }
-    .container-resume p {
-      text-align: left; }
-    .container-resume h2,
-    .container-resume h3,
-    .container-resume h4 {
-      margin-bottom: auto; }
-    .container-resume-3 h4 {
-      font-size: 15pt; }
-    .container-resume-3, .container-resume-6 {
-      border-bottom: #ff0 1px solid;
-      padding-bottom: 1rem; }
-    .container-resume-8 {
-      padding-top: 20px; } }
+    text-align: center;
+    justify-self: center;
+    padding: 0rem; }
+  .socials {
+    display: none; }
+  .services {
+    padding: .5rem 0rem;
+    height: auto; }
+    .services p {
+      font-size: 30px; }
+  .expirience {
+    padding: .5rem 0rem; }
+  .footer {
+    justify-content: left;
+    padding: .5rem 0rem; } }
