@@ -34,7 +34,21 @@
   }
 }
 
-@media(max-width: 740px)
+// @media(max-width: 750px)
+// {
+//   .container {
+//     display: none;
+//     grid-template-areas:
+//       'navbar'
+//       'services'
+//       'expirience'
+//       'footer';
+//     grid-gap: 1rem;
+//   }
+// }
+
+
+@media(max-width: 500px)
 {
   .container {
     display: grid;

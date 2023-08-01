@@ -4,17 +4,24 @@
   font-weight: normal;
   src: local('Acumin Pro'), url('../fonts/Acumin/Acumin-RPro.woff') format('woff');
 }
-  
+
+@font-face {
+  font-family: 'Acumin Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Acumin Pro Bold'), url('../fonts/Acumin/Acumin-BdPro.woff') format('woff');
+}
+
 @font-face {
   font-family: 'Poppins Extra Light';
   font-style: normal;
   font-weight: normal;
   src: local('Poppins Extra Light'), url('../fonts/Poppins/Poppins-ExtraLight.ttf') format('truetype');
 }
-  
+
 @font-face {
-  font-family: 'Acumin Pro Bold';
+  font-family: 'Poppins Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Acumin Pro Bold'), url('../fonts/Acumin/Acumin-BdPro.woff') format('woff');
+  src: local('Poppins Regular'), url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
