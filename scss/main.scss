@@ -37,8 +37,8 @@
 .services {
   grid-area: services;
   display: flex;
-  padding: 1rem 6rem;
-  align-items: flex-end;
+  padding: 6rem 6rem 1rem 6rem;
+  align-items: center;
   height: 60vh;
 }
 
@@ -76,6 +76,7 @@
 .services,
 .expirience,
 .socials,
+body,
 i,
 p,
 .logo,
