@@ -17,7 +17,9 @@
 .navbar {
   grid-area: navbar;
   display: grid;
-  grid-template-columns: 6fr 3fr 1fr;
+  // Have set this to 1fr 1fr until were ready to include pages on the navbar
+  grid-template-columns: 1fr 1fr;
+  // grid-template-columns: 6fr 3fr 1fr;
   align-items: center;
   padding: 1rem 6rem;
 
