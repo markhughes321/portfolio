@@ -1,6 +1,8 @@
 // Tablets & smaller
+
 @media(max-width: 1045px)
 {
+
   .container {
     display: grid;
     grid-template-areas:
@@ -34,18 +36,23 @@
   }
 }
 
-// @media(max-width: 750px)
-// {
-//   .container {
-//     display: none;
-//     grid-template-areas:
-//       'navbar'
-//       'services'
-//       'expirience'
-//       'footer';
-//     grid-gap: 1rem;
-//   }
-// }
+@media(max-width: 850px)
+{
+  @import 'hamburger';
+
+  .menu-wrap {
+    display: block;
+  }
+
+  .pages {
+    display: none;
+  }
+
+  .socials {
+    display: none;
+  }
+
+}
 
 
 @media(max-width: 500px)
