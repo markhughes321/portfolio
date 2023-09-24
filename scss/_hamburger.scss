@@ -26,7 +26,7 @@
   width: 60px;
   height: 60px;
   padding: 1rem;
-  background: $primary-color;
+  background: $black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +109,7 @@
 }
 
 .menu-wrap .menu > div {
-  background: $overlay-color;
+  background: $white;
   border-radius: 50%;
   width: 200vw;
   height: 200vw;
@@ -143,5 +143,5 @@
 }
 
 .menu-wrap .menu > div > div > ul > li > a:hover {
-  color: $secondary-color;
+  color: $alt-color;
 }

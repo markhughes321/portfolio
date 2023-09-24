@@ -1,91 +1,66 @@
 @import "config";
 @import "defaults";
 @import "fonts";
+@import "hamburger";
+@import "media";
 
-.container {
+
+.container
+{
   display: grid;
-  grid-template-areas:
-    'navbar navbar navbar'
-    'services services expirience'
-    'footer footer footer';
-  grid-gap: 1rem;
-  max-width: 1800px;
+  grid-template-columns: 1fr;
+  height: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.menu-wrap {
+.socials,
+.experience,
+.pages
+{
   display: none;
 }
 
-.navbar {
-  grid-area: navbar;
-  display: grid;
-  grid-template-columns: 6fr 3fr 1fr;
-  align-items: center;
-  padding: 1rem 6rem;
-
-  ul {
-    display: flex;
-  }
-  
-  li {
-    padding: .75rem;
-  }
-}
-
-.socials {
-  justify-self: end;
-}
-
-.services {
-  grid-area: services;
+.footer
+{
   display: flex;
-  padding: 6rem 6rem 1rem 6rem;
-  align-items: center;
-  height: 60vh;
-}
-
-.expirience {
-  grid-area: expirience;
-  padding: 1rem 6rem;
-}
-
-.jobs {
-  padding: .5rem 0rem;
-}
-
-.footer {
-  grid-area: footer;
-  display: flex;
-  align-items: flex-end;
   justify-content: end;
-  padding: 1rem 6rem;
-
-  a {
-    display: flex;
-
-    &:hover {
-      color: $alt-color;
-      text-decoration: none;
-    }
-  }
-
-  i {
-    padding: .05rem .5rem;
-  }
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 12px;
 }
+
+.footer a
+{
+  display: flex;
+  align-items: center;
+}
+.footer a:hover
+{
+  color: #ff0;
+  text-decoration: none;
+}
+.footer i
+{
+  padding: 0.05rem 0.5rem;
+}
+
 
 .navbar,
 .services,
-.expirience,
+.main,
+.experience,
+.biography,
 .socials,
 body,
 i,
-p,
 .logo,
 .pages,
-.footer {
+.footer,
+.job,
+.main
+{
   border: 0px #ccc solid;
 }
 
-@import 'media';
+@import "media";
