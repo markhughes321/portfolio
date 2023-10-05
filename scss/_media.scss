@@ -1,5 +1,11 @@
 /* media query for tablet and desktop */
 @media (min-width: 750px) {
+
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+  
   .container 
   {
     display: grid;
@@ -42,10 +48,6 @@
 
   .article, .job {
     padding: 1rem 0rem;  
-  }
-
-  .footer p {
-    font-size: 18px;
   }
 
   .socials,

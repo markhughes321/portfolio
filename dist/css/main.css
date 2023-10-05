@@ -19,31 +19,34 @@ ul {
   list-style: none; }
 
 h1, h2, h3, h4, h5, p {
-  font-family: Acumin Pro;
   letter-spacing: 0.5px; }
 
 p {
-  font-size: 12px; }
+  font-family: Avenir Book;
+  font-size: 16px; }
 
 h1 {
-  font-size: 40px; }
+  font-family: Avenir Black;
+  font-size: 40px;
+  line-height: 50px; }
 
 h2 {
+  font-family: Poppins Extra Light;
+  font-weight: normal;
   font-size: 16px; }
 
 h3 {
-  font-size: 12px; }
-
-.navbar h2 {
-  font-size: 16px;
-  font-family: Poppins Extra Light; }
+  font-family: Avenir Book;
+  font-size: 16px; }
 
 .biography p {
-  font-size: 25px; }
+  font-family: Avenir Book;
+  font-size: 25px;
+  font-weight: 500; }
 
 .footer p {
   font-family: Poppins Extra Light;
-  font-style: italic; }
+  font-size: 16px; }
 
 a {
   color: #ffffff;
@@ -58,18 +61,6 @@ i {
     color: #ff0; }
 
 @font-face {
-  font-family: 'Acumin Pro';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Acumin Pro"), url("../fonts/Acumin/Acumin-RPro.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Acumin Pro Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Acumin Pro Bold"), url("../fonts/Acumin/Acumin-BdPro.woff") format("woff"); }
-
-@font-face {
   font-family: 'Poppins Extra Light';
   font-style: normal;
   font-weight: normal;
@@ -80,6 +71,42 @@ i {
   font-style: normal;
   font-weight: normal;
   src: local("Poppins Regular"), url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Avenir Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Regular"), url("../fonts/Avenir/Avenir-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Avenir Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Black"), url("../fonts/Avenir/Avenir-Black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Avenir Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Book"), url("../fonts/Avenir/Avenir-Book.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Avenir Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Heavy"), url("../fonts/Avenir/Avenir-Heavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Avenir Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Light"), url("../fonts/Avenir/Avenir-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Avenir Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Regular"), url("../fonts/Avenir/Avenir-Regular.ttf") format("truetype"); }
 
 .menu-wrap {
   position: fixed;
@@ -209,40 +236,6 @@ i {
 .menu-wrap .menu > div > div > ul > li > a:hover {
   color: #ff0; }
 
-/* media query for tablet and desktop */
-@media (min-width: 750px) {
-  .container {
-    display: grid;
-    grid-template-areas: 'navbar' 'biography experience' 'footer'; }
-  .navbar {
-    grid-area: navbar;
-    display: grid;
-    grid-template-columns: 6fr 3fr 1fr;
-    align-items: center; }
-    .navbar ul {
-      display: flex; }
-    .navbar li {
-      padding: .75rem; }
-  main {
-    display: grid;
-    grid-template-columns: 3fr 1fr; }
-  .biography p {
-    font-size: 35px; }
-  .experience {
-    display: flex;
-    flex-direction: column;
-    text-align: right; }
-  .article, .job {
-    padding: 1rem 0rem; }
-  .footer p {
-    font-size: 18px; }
-  .socials,
-  .experience,
-  .pages {
-    display: flex; }
-  .menu-wrap, .toggler {
-    display: none !important; } }
-
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -259,8 +252,7 @@ i {
   display: flex;
   justify-content: end;
   align-items: center;
-  padding: 0.5rem 1rem;
-  font-size: 12px; }
+  padding: 0.5rem 1rem; }
 
 .footer a {
   display: flex;
@@ -290,6 +282,9 @@ i,
 
 /* media query for tablet and desktop */
 @media (min-width: 750px) {
+  body {
+    height: 100vh;
+    width: 100vw; }
   .container {
     display: grid;
     grid-template-areas: 'navbar' 'biography experience' 'footer'; }
@@ -313,8 +308,6 @@ i,
     text-align: right; }
   .article, .job {
     padding: 1rem 0rem; }
-  .footer p {
-    font-size: 18px; }
   .socials,
   .experience,
   .pages {

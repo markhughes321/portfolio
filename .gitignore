@@ -1,2 +1,30 @@
-node_modules
-.vscode
+# Node.js
+node_modules/
+npm-debug.log
+
+# Sass/SCSS
+.sass-cache/
+*.map
+
+# Editor and OS artifacts
+*.swp
+*.swo
+*.bak
+*.sublime*
+*.DS_Store
+*.idea/
+*.vscode/
+*.log
+*.tmp
+Thumbs.db
+UserInterfaceState.xcuserstate
+
+# Dist/build directories
+build/
+
+# Environment configs
+.env
+.env.local
+
+# Cache
+.cache/

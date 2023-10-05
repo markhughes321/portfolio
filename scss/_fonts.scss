@@ -1,18 +1,4 @@
 @font-face {
-  font-family: 'Acumin Pro';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Acumin Pro'), url('../fonts/Acumin/Acumin-RPro.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Acumin Pro Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Acumin Pro Bold'), url('../fonts/Acumin/Acumin-BdPro.woff') format('woff');
-}
-
-@font-face {
   font-family: 'Poppins Extra Light';
   font-style: normal;
   font-weight: normal;
@@ -24,4 +10,46 @@
   font-style: normal;
   font-weight: normal;
   src: local('Poppins Regular'), url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Regular'), url('../fonts/Avenir/Avenir-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Black'), url('../fonts/Avenir/Avenir-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Book'), url('../fonts/Avenir/Avenir-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Heavy'), url('../fonts/Avenir/Avenir-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Light'), url('../fonts/Avenir/Avenir-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Regular'), url('../fonts/Avenir/Avenir-Regular.ttf') format('truetype');
 }
