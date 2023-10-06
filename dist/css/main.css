@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, p {
   letter-spacing: 0.5px; }
 
 p {
-  font-family: Avenir Book;
+  font-family: Avenir Light;
   font-size: 16px; }
 
 h1 {
@@ -236,6 +236,10 @@ i {
 .menu-wrap .menu > div > div > ul > li > a:hover {
   color: #ff0; }
 
+#error-page .container {
+  text-align: center;
+  align-content: center; }
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -277,8 +281,8 @@ i,
 .pages,
 .footer,
 .job,
-.main {
-  border: 0px #ccc solid; }
+.main #error-page .container {
+  border: 0 #ccc solid; }
 
 /* media query for tablet and desktop */
 @media (min-width: 750px) {

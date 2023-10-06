@@ -2,7 +2,7 @@
 @import "defaults";
 @import "fonts";
 @import "hamburger";
-
+@import "pages/404";
 
 .container
 {
@@ -56,9 +56,9 @@ i,
 .pages,
 .footer,
 .job,
-.main
+.main #error-page .container
 {
-  border: 0px #ccc solid;
+  border: 0 #ccc solid;
 }
 
 @import "media";

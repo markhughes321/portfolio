@@ -1,30 +1,20 @@
-# Node.js
+# Node modules
 node_modules/
-npm-debug.log
 
-# Sass/SCSS
-.sass-cache/
-*.map
+# Distribution folder
+dist/
 
-# Editor and OS artifacts
-*.swp
-*.swo
-*.bak
-*.sublime*
-*.DS_Store
-*.idea/
-*.vscode/
-*.log
-*.tmp
+# Package lock files (optional, based on your team's decision)
+# package-lock.json
+
+# System files
+.DS_Store
 Thumbs.db
-UserInterfaceState.xcuserstate
 
-# Dist/build directories
-build/
+# IDE settings
+.vscode/
+.idea/
 
-# Environment configs
-.env
-.env.local
-
-# Cache
-.cache/
+# Temporary files
+*.tmp
+*.log
