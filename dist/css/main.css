@@ -3,22 +3,28 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  height: 100%; }
+
 body {
   display: flex;
   flex-direction: column;
-  align-content: center;
   justify-content: center;
   background: #000000;
   color: #ffffff;
   height: 100%;
-  width: 100%;
   overflow: hidden;
   padding: 1rem; }
 
 ul {
   list-style: none; }
 
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   letter-spacing: 0.5px; }
 
 p {
@@ -37,6 +43,7 @@ h2 {
 
 h3 {
   font-family: Avenir Book;
+  line-height: 35px;
   font-size: 16px; }
 
 .biography p {
@@ -236,9 +243,13 @@ i {
 .menu-wrap .menu > div > div > ul > li > a:hover {
   color: #ff0; }
 
-#error-page .container {
-  text-align: center;
-  align-content: center; }
+#services-page .services-grid {
+  height: auto;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+  padding-top: 1rem; }
 
 .container {
   display: grid;
@@ -269,6 +280,11 @@ i {
 .footer i {
   padding: 0.05rem 0.5rem; }
 
+#services-grid,
+section,
+main,
+body,
+.container,
 .navbar,
 .services,
 .main,
@@ -282,9 +298,9 @@ i,
 .footer,
 .job,
 .main #error-page .container {
-  border: 0 #ccc solid; }
+  border: 0px #ccc solid; }
 
-/* media query for tablet and desktop */
+/* media query for tablet */
 @media (min-width: 750px) {
   body {
     height: 100vh;
@@ -300,7 +316,7 @@ i,
     .navbar ul {
       display: flex; }
     .navbar li {
-      padding: .75rem; }
+      padding: 0.75rem; }
   main {
     display: grid;
     grid-template-columns: 3fr 1fr; }
@@ -310,11 +326,24 @@ i,
     display: flex;
     flex-direction: column;
     text-align: right; }
-  .article, .job {
-    padding: 1rem 0rem; }
+  .article,
+  .job {
+    padding: 1rem 0; }
   .socials,
   .experience,
   .pages {
     display: flex; }
-  .menu-wrap, .toggler {
-    display: none !important; } }
+  .menu-wrap,
+  .toggler {
+    display: none !important; }
+  #services-page .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem; } }
+
+/* media query for desktop */
+@media (min-width: 1000px) {
+  #services-page .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem; } }

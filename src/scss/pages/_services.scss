@@ -1,0 +1,27 @@
+#services-page {
+  // .container
+  // {
+  //   height: auto;
+  //   overflow-y: auto;
+  // }
+  // .navbar
+  // {
+  //   position: fixed;
+  //   width: 100%;
+  //   background-color: $black;
+  // }
+
+  .services-grid {
+    height: auto;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    padding-top: 1rem;
+  }
+}
+
+
+
+
+

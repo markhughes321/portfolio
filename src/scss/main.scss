@@ -3,6 +3,8 @@
 @import "fonts";
 @import "hamburger";
 @import "pages/404";
+@import "pages/services";
+@import "pages/blog";
 
 .container
 {
@@ -43,7 +45,11 @@
   padding: 0.05rem 0.5rem;
 }
 
-
+#services-grid,
+section,
+main,
+body,
+.container, 
 .navbar,
 .services,
 .main,
@@ -58,7 +64,7 @@ i,
 .job,
 .main #error-page .container
 {
-  border: 0 #ccc solid;
+  border: 0px #ccc solid;
 }
 
 @import "media";
