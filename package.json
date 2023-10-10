@@ -4,7 +4,8 @@
   "description": "Portfolio Website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w src/scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w src/scss/ -o dist/css/ --recursive",
+    "serve": "bundle exec jekyll serve --livereload"
   },
   "author": "",
   "license": "ISC",
