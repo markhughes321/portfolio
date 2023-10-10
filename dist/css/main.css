@@ -58,7 +58,8 @@ h3 {
 a {
   color: #ffffff;
   text-decoration: none;
-  font-family: Poppins Extra Light; }
+  font-family: Poppins Extra Light;
+  color: inherit; }
   a:hover {
     text-decoration: line-through #ff0 1px; }
 
@@ -262,6 +263,9 @@ i {
 .experience,
 .pages {
   display: none; }
+
+.logo a:hover {
+  text-decoration: none; }
 
 .footer {
   display: flex;
