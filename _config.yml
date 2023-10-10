@@ -8,3 +8,5 @@ permalink: /:title
 # Build Settings
 markdown: kramdown
 theme: minima
+
+google_analytics: G-CHK0QPMQXC
