@@ -1,20 +1,22 @@
-# Node modules
-node_modules/
+# Dependency directories
+/node_modules
 
-# Distribution folder
-dist/
+# Jekyll build artifacts
+/_site
+/_posts
 
-# Package lock files (optional, based on your team's decision)
-# package-lock.json
+# Bundler dependencies
+Gemfile.lock
 
-# System files
+# OS generated files
 .DS_Store
 Thumbs.db
 
-# IDE settings
+# Temporary files and logs
+*.log
+*.tmp
+
+# IDE / editor specific
 .vscode/
 .idea/
-
-# Temporary files
-*.tmp
-*.log
+*.swp

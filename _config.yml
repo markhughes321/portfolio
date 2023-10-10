@@ -1,0 +1,10 @@
+# Basic Settings
+title: Your Site's Title
+description: A description of your site
+baseurl: ""
+url: "https://markhughesqa.com"
+permalink: /:title/
+
+# Build Settings
+markdown: kramdown
+theme: minima
