@@ -27,10 +27,6 @@ h5,
 p {
   letter-spacing: 0.5px; }
 
-p {
-  font-family: Avenir Light;
-  font-size: 16px; }
-
 h1 {
   font-family: Avenir Black;
   font-size: 40px;
@@ -39,21 +35,32 @@ h1 {
 h2 {
   font-family: Poppins Extra Light;
   font-weight: normal;
-  font-size: 16px; }
+  font-size: 18px;
+  letter-spacing: 0.5px; }
 
 h3 {
   font-family: Avenir Book;
-  line-height: 35px;
+  line-height: 33px;
+  font-size: 20px;
+  letter-spacing: 0.5px; }
+
+h4 {
+  font-family: Poppins Extra Light;
+  font-size: 15px; }
+
+p {
+  font-family: Avenir Book;
+  line-height: 20px;
+  font-size: 16px; }
+
+.experience p {
+  font-family: Poppins Extra Light;
   font-size: 16px; }
 
 .biography p {
-  font-family: Avenir Book;
-  font-size: 25px;
-  font-weight: 500; }
-
-.footer p {
-  font-family: Poppins Extra Light;
-  font-size: 16px; }
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 2.1rem; }
 
 a {
   color: #ffffff;
@@ -250,7 +257,8 @@ i {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1.5rem;
-  padding-top: 1rem; }
+  padding-top: 1.5rem;
+  justify-content: center; }
 
 .container {
   display: grid;
@@ -309,6 +317,14 @@ i,
   body {
     height: 100vh;
     width: 100vw; }
+  main {
+    display: grid;
+    grid-template-columns: 2.8fr 1fr; }
+  h3 {
+    font-family: Avenir Book;
+    line-height: 33px;
+    font-size: 20px;
+    letter-spacing: 0.5px; }
   .container {
     display: grid;
     grid-template-areas: 'navbar' 'biography experience' 'footer'; }
@@ -321,10 +337,8 @@ i,
       display: flex; }
     .navbar li {
       padding: 0.75rem; }
-  main {
-    display: grid;
-    grid-template-columns: 3fr 1fr; }
   .biography p {
+    line-height: 3rem;
     font-size: 35px; }
   .experience {
     display: flex;
@@ -343,11 +357,15 @@ i,
   #services-page .services-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1.5rem; } }
+    grid-gap: 1.5rem;
+    padding-top: 1.5rem; }
+    #services-page .services-grid p {
+      font-size: 15px; }
+    #services-page .services-grid h3 {
+      font-size: 22px; } }
 
 /* media query for desktop */
 @media (min-width: 1000px) {
   #services-page .services-grid {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1.5rem; } }
+    padding-top: 0rem; } }

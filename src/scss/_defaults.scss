@@ -38,12 +38,6 @@ p
   letter-spacing: 0.5px;
 }
 
-p
-{
-  font-family: Avenir Light;
-  font-size: 16px;
-}
-
 h1
 {
   font-family: Avenir Black;
@@ -55,27 +49,41 @@ h2
 {
   font-family: Poppins Extra Light;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
 h3
 {
   font-family: Avenir Book;
-  line-height: 35px;
+  line-height: 33px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+h4
+{
+  font-family: Poppins Extra Light;
+  font-size: 15px;
+}
+
+p
+{
+  font-family: Avenir Book;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.experience p {
+  font-family: Poppins Extra Light;
   font-size: 16px;
 }
 
 .biography p
 {
-  font-family: Avenir Book;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 500;
-}
-
-.footer p
-{
-  font-family: Poppins Extra Light;
-  font-size: 16px;
+  line-height: 2.1rem;
 }
 
 a
