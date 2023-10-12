@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w src/scss/ -o dist/css/ --recursive",
-    "serve": "bundle exec jekyll serve"
+    "serve": "bundle exec jekyll serve",
+    "install": "bundle install",
+    "update": "bundle update"
   },
   "author": "",
   "license": "ISC",
