@@ -94,6 +94,14 @@
       font-size: 22px;
     }
   }
+
+  #blog-page .blog-grid
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+    padding-top: 1.5rem;
+  }
 }
 
 /* media query for desktop */
@@ -103,5 +111,11 @@
   {
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 0rem;
+  }
+
+  #blog-page .blog-grid
+  {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 2rem;
   }
 }

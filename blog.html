@@ -1,64 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/dist/img/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="/dist/css/main.css">
-  <script src="https://kit.fontawesome.com/e2b8a417b3.js" crossorigin="anonymous"></script>
-  <title>Blog | Mark Hughes</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/dist/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <script src="https://kit.fontawesome.com/e2b8a417b3.js" crossorigin="anonymous"></script>
+    <title>Blog | Mark Hughes</title>
+  </head>
 
-<body id="blog-page">  
-  <div class="container">
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <a href="/">
-            <h1>Mark Hughes</h1>
-            <h2>Quality Assurance Specialist</h2>
-          </a>
-        </div>
-        <div class="pages">
-          <ul>
-            <li><a href="/services">Services</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-        <div class="socials">
-          <ul>
-            <li><a href="https://medium.com/@markhughes321" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fab fa-medium"></i></a></li>
-            <li><a href="https://github.com/markhughes321" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/markhughes321/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-        <div class="menu-wrap">
+  <body id="blog-page">
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="/">
+              <h1>Mark Hughes</h1>
+              <h2>Quality Assurance Specialist</h2>
+            </a>
+          </div>
+          <div class="pages">
+            <ul>
+              <li><a href="/services">Services</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="socials">
+            <ul>
+              <li><a href="https://medium.com/@markhughes321" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fab fa-medium"></i></a></li>
+              <li><a href="https://github.com/markhughes321" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/markhughes321/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="menu-wrap">
             <input type="checkbox" class="toggler">
-            <div class="hamburger"><div></div></div>
-            <div class="menu">
-                <div>
-                    <div>
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/services">Services</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="hamburger">
+              <div></div>
             </div>
-        </div>
-      </nav>
-    </header>
-
-    <main class="blog-grid">
-      <section>
-        <h3>Automation Framework Development</h3>
-        <p>Designing and implementing both API and UI automation frameworks. Custom test framework development, especially integrations with blockchain applications. Familiarity with various tools like Karate DSL, Cypress, Selenium, and Cucumber.</p>
-    </section>
-    </main>
-
-  </div>
-</body>
-
+            <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="blog-grid">
+        <article class="article-card">
+          <title>Article Card</title>
+          <a href="https://medium.com/@markhughes321/integrate-karate-dsl-cucumber-reports-into-your-slack-channel-f6b4f7d71d08">
+            <div class="article-meta">
+              <span>Sep 15 2023</span>
+            </div>
+            <img src="dist/img/blog/Karate Slack Integration.jpg" alt="Karate Slack Integration">
+            <div class="article-meta">
+              <span>API Automation, Reporting, Slack</span>
+            </div>
+            <div class="article-title">Integrate Karate DSL Cucumber Reports into your Slack channel</div>
+            <div class="article-intro">Streamline your test feedback loop by pushing your test results directly into Slack. In today’s fast-paced development environment, real-time…</div>
+            <div class="article-meta">
+              <span>4 min read</span>
+            </div>
+          </a>
+        </article>
+      </main>
+    </body>
+  </body>
 </html>
