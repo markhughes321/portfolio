@@ -3,7 +3,7 @@
 @import "fonts";
 @import "hamburger";
 @import "pages/404";
-@import "pages/services";
+@import "pages/skills";
 @import "pages/blog";
 
 .container
@@ -50,13 +50,13 @@
   padding: 0.05rem 0.5rem;
 }
 
-#services-grid,
+#skills-grid,
 section,
 main,
 body,
-.container, 
+.container,
 .navbar,
-.services,
+.skills,
 .main,
 .experience,
 .biography,
@@ -69,7 +69,7 @@ i,
 .job,
 .main #error-page .container
 {
-  border: 0px #ccc solid;
+  border: 0 #ccc solid;
 }
 
 @import "media";

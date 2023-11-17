@@ -251,7 +251,7 @@ i {
 .menu-wrap .menu > div > div > ul > li > a:hover {
   color: #ff0; }
 
-#services-page .services-grid {
+#skills-page .skills-grid {
   height: auto;
   overflow-y: auto;
   display: grid;
@@ -322,13 +322,13 @@ i {
 .footer i {
   padding: 0.05rem 0.5rem; }
 
-#services-grid,
+#skills-grid,
 section,
 main,
 body,
 .container,
 .navbar,
-.services,
+.skills,
 .main,
 .experience,
 .biography,
@@ -340,7 +340,7 @@ i,
 .footer,
 .job,
 .main #error-page .container {
-  border: 0px #ccc solid; }
+  border: 0 #ccc solid; }
 
 /* media query for tablet */
 @media (min-width: 750px) {
@@ -384,14 +384,14 @@ i,
   .menu-wrap,
   .toggler {
     display: none !important; }
-  #services-page .services-grid {
+  #skills-page .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1.5rem;
     padding-top: 1.5rem; }
-    #services-page .services-grid p {
+    #skills-page .skills-grid p {
       font-size: 15px; }
-    #services-page .services-grid h3 {
+    #skills-page .skills-grid h3 {
       font-size: 22px; }
   #blog-page .blog-grid {
     display: grid;
@@ -400,7 +400,7 @@ i,
 
 /* media query for desktop */
 @media (min-width: 1000px) {
-  #services-page .services-grid {
+  #skills-page .skills-grid {
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 0rem; }
   #blog-page .blog-grid {

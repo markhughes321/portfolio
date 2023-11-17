@@ -78,7 +78,7 @@
     display: none !important;
   }
 
-  #services-page .services-grid
+  #skills-page .skills-grid
   {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -105,7 +105,7 @@
 /* media query for desktop */
 @media(min-width: 1000px)
 {
-  #services-page .services-grid
+  #skills-page .skills-grid
   {
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 0rem;
