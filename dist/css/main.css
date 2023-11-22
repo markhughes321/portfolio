@@ -260,6 +260,18 @@ i {
   padding-top: 1.5rem;
   justify-content: center; }
 
+#skills-page .tag {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #353442;
+  text-align: center;
+  font-family: Avenir Book;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  margin: 2px 2px 2px 0px; }
+
 #blog-page .blog-grid {
   height: auto;
   overflow-y: auto;
