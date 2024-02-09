@@ -25,7 +25,7 @@
   .container
   {
     display: grid;
-    grid-template-areas: 'navbar' 'biography experience' 'footer';
+    grid-template-areas: 'navbar' 'biography recent-work' 'footer';
   }
 
   .navbar
@@ -52,7 +52,7 @@
     font-size: 35px;
   }
 
-  .experience
+  .recent-work
   {
     display: flex;
     flex-direction: column;
@@ -60,13 +60,13 @@
   }
 
   .article,
-  .job
+  .work
   {
     padding: 1rem 0;
   }
 
   .socials,
-  .experience,
+  .recent-work,
   .pages
   {
     display: flex;
@@ -78,7 +78,7 @@
     display: none !important;
   }
 
-  #skills-page .skills-grid
+  #services-page .services-grid
   {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -100,18 +100,30 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 1.5rem;
   }
+
+  #projects-page .projects-grid
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
 }
 
 /* media query for desktop */
 @media(min-width: 1000px)
 {
-  #skills-page .skills-grid
+  #services-page .services-grid
   {
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 0rem;
   }
 
   #blog-page .blog-grid
+  {
+    grid-template-columns: 1fr 1fr 1fr;
+    // padding-top: 2rem;
+  }
+  #projects-page .projects-grid
   {
     grid-template-columns: 1fr 1fr 1fr;
     // padding-top: 2rem;

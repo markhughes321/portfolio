@@ -53,7 +53,7 @@ p {
   line-height: 20px;
   font-size: 16px; }
 
-.experience p {
+.recent-work p {
   font-family: Poppins Extra Light;
   font-size: 16px; }
 
@@ -251,7 +251,7 @@ i {
 .menu-wrap .menu > div > div > ul > li > a:hover {
   color: #ff0; }
 
-#skills-page .skills-grid {
+#services-page .services-grid {
   height: auto;
   overflow-y: auto;
   display: grid;
@@ -260,7 +260,7 @@ i {
   padding-top: 1.5rem;
   justify-content: center; }
 
-#skills-page .tag {
+#services-page .tag {
   display: inline-block;
   padding: 2px 7px;
   border-radius: 6px;
@@ -284,7 +284,7 @@ i {
   text-decoration: none; }
 
 #blog-page .article-card {
-  border: .1px solid #777;
+  border: .1px solid #323232;
   max-width: 350px;
   padding: 15px;
   height: 100%; }
@@ -302,6 +302,32 @@ i {
   font-size: 12px;
   color: #999; }
 
+#projects-page .projects-grid {
+  height: auto;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+  padding-top: 2rem; }
+
+#projects-page a {
+  text-decoration: none; }
+
+#projects-page .project-card {
+  border: .1px solid #323232;
+  max-width: 350px;
+  padding: 15px;
+  height: 100%; }
+
+#projects-page .project-card img {
+  max-width: 100%; }
+
+#projects-page .project-title {
+  margin-bottom: 10px; }
+
+#projects-page .project-intro {
+  margin-bottom: 10px; }
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -310,7 +336,7 @@ i {
   margin: 0 auto; }
 
 .socials,
-.experience,
+.recent-work,
 .pages {
   display: none; }
 
@@ -327,22 +353,23 @@ i {
   display: flex;
   align-items: center; }
 
-.footer a:hover {
+.footer a:hover,
+.recent-work a:hover {
   color: #ff0;
   text-decoration: none; }
 
 .footer i {
   padding: 0.05rem 0.5rem; }
 
-#skills-grid,
+#services-grid,
 section,
 main,
 body,
 .container,
 .navbar,
-.skills,
+.services,
 .main,
-.experience,
+.recent-work,
 .biography,
 .socials,
 body,
@@ -350,7 +377,8 @@ i,
 .logo,
 .pages,
 .footer,
-.job,
+.work,
+.projects,
 .main #error-page .container {
   border: 0 #ccc solid; }
 
@@ -369,7 +397,7 @@ i,
     letter-spacing: 0.5px; }
   .container {
     display: grid;
-    grid-template-areas: 'navbar' 'biography experience' 'footer'; }
+    grid-template-areas: 'navbar' 'biography recent-work' 'footer'; }
   .navbar {
     grid-area: navbar;
     display: grid;
@@ -382,38 +410,44 @@ i,
   .biography p {
     line-height: 3rem;
     font-size: 35px; }
-  .experience {
+  .recent-work {
     display: flex;
     flex-direction: column;
     text-align: right; }
   .article,
-  .job {
+  .work {
     padding: 1rem 0; }
   .socials,
-  .experience,
+  .recent-work,
   .pages {
     display: flex; }
   .menu-wrap,
   .toggler {
     display: none !important; }
-  #skills-page .skills-grid {
+  #services-page .services-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1.5rem;
     padding-top: 1.5rem; }
-    #skills-page .skills-grid p {
+    #services-page .services-grid p {
       font-size: 15px; }
-    #skills-page .skills-grid h3 {
+    #services-page .services-grid h3 {
       font-size: 22px; }
   #blog-page .blog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem; }
+  #projects-page .projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1.5rem; } }
 
 /* media query for desktop */
 @media (min-width: 1000px) {
-  #skills-page .skills-grid {
+  #services-page .services-grid {
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 0rem; }
   #blog-page .blog-grid {
+    grid-template-columns: 1fr 1fr 1fr; }
+  #projects-page .projects-grid {
     grid-template-columns: 1fr 1fr 1fr; } }

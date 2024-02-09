@@ -3,8 +3,9 @@
 @import "fonts";
 @import "hamburger";
 @import "pages/404";
-@import "pages/skills";
+@import "pages/services";
 @import "pages/blog";
+@import "pages/projects";
 
 .container
 {
@@ -16,7 +17,7 @@
 }
 
 .socials,
-.experience,
+.recent-work,
 .pages
 {
   display: none;
@@ -40,7 +41,8 @@
   display: flex;
   align-items: center;
 }
-.footer a:hover
+.footer a:hover,
+.recent-work a:hover
 {
   color: #ff0;
   text-decoration: none;
@@ -50,15 +52,15 @@
   padding: 0.05rem 0.5rem;
 }
 
-#skills-grid,
+#services-grid,
 section,
 main,
 body,
 .container,
 .navbar,
-.skills,
+.services,
 .main,
-.experience,
+.recent-work,
 .biography,
 .socials,
 body,
@@ -66,7 +68,8 @@ i,
 .logo,
 .pages,
 .footer,
-.job,
+.work,
+.projects,
 .main #error-page .container
 {
   border: 0 #ccc solid;
