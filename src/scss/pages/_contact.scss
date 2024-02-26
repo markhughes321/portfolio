@@ -1,0 +1,47 @@
+/* General Styles */
+@import "../config";
+
+#contact-page {
+
+  .contact-form {
+    max-width: auto;
+    margin: 50px auto;
+  }
+
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form label {
+    margin-bottom: 5px;
+    font-family: Avenir Book;
+    line-height: 20px;
+    font-size: 20px;
+    color: $white;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form {
+    width: 100%;
+    padding: 13px 0px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+
+  .contact-form button[type="submit"] {
+    background-color: $alt-color;
+    color: $black;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-form button[type="submit"]:hover {
+    background-color: $alt-color;
+  }
+}

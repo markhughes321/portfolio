@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" href="https://markhughesqa.com/dist/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/dist/css/main.css">
     <script src="https://kit.fontawesome.com/e2b8a417b3.js" crossorigin="anonymous"></script>
@@ -47,7 +47,7 @@
   </head>
 
 
-<body id="projects-page">
+<body id="contact-page">
     <div class="container">
         <header>
             <nav class="navbar">
@@ -62,7 +62,8 @@
                         <li><a href="/services">Services</a></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="https://www.linkedin.com/services/page/768051328804a1313a/#:~:text=Add%20media-,Reviews,-5.0%20out%20of">Reviews</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
                 </div>
                 <div class="socials">
                     <ul>
@@ -88,7 +89,8 @@
                                     <li><a href="/services">Services</a></li>
                                     <li><a href="/projects">Projects</a></li>
                                     <li><a href="https://www.linkedin.com/services/page/768051328804a1313a/#:~:text=Add%20media-,Reviews,-5.0%20out%20of">Reviews</a></li>
-                                    <li><a href="/contact">Contact</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                  </ul>
                             </div>
                         </div>
                     </div>
@@ -96,55 +98,37 @@
             </nav>
         </header>
 
-        <main class="projects-grid">
-          
-          <project class="project-card">
-            <a href="https://heni.com">
-              <img src="dist/img/projects/heni.png" alt="HENI Homepage">
-              <div class="project-title">
-                <h2>HENI</p>
-              </div>
-              <div class="project-intro">
-                <p>HENI is an international art services business working with leading artists and estates across publishing, print-making.</p>
-              </div>
-            </a>
-          </project>
+        <main class="contact-grid">
 
-          <project class="project-card">
-            <a href="https://gigisupplements.com/">
-              <img src="dist/img/projects/gigisupplements.png" alt="Gigi Supplements Homepage">
-              <div class="project-title">
-                <h2>Gigi Supplements</p>
-              </div>
-              <div class="project-intro">
-                <p>Gigi is an e-commerce brand offering a range of products and subscriptions for women's health.</p>
-              </div>
-            </a>
-          </project>
+          <section class="contact-info">
+            <h3>
+              Let's Connect!
+            </h3>
+            <p>Drop me a message today if you’d like some help, and I'll get back to you in a flash.</p>
+          </section>
 
-          <project class="project-card">
-            <a href="https://www.fenergo.com/">
-              <img src="dist/img/projects/fenergo.png" alt="Fenergo Homepage">
-              <div class="project-title">
-                <h2>Fenergo</p>
-              </div>
-              <div class="project-intro">
-                <p>Fenergo is a leading SaaS-based Client Lifecycle Management in the financial industry.</p>
-              </div>
-            </a>
-          </project>
-
-          <project class="project-card">
-            <a href="https://yourwellnesscollective.ie/">
-              <img src="dist/img/projects/yourwellnesscollective.png" alt="Your Wellness Collective Homepage">
-              <div class="project-title">
-                <h2>Your Wellness Collective</p>
-              </div>
-              <div class="project-intro">
-                <p>Your Wellness Collective is an e-commerce platform specializing in personalized supplement plans and high-quality health products.</p>
-              </div>
-            </a>
-          </project>
+          <section>
+            <section class="contact-form">
+              <form id="form">
+                <div>
+                    <label for="name">Full Name *</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email Address *</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="websiteUrl">Website Url  *</label><br>
+                    <input type="text" name="websiteUrl" required></input>
+                </div>
+                <div>
+                    <button type="submit">SEND IT</button>
+                </div>
+              </form>
+              <script src="dist/js/submit-form.js"></script>
+            </section>
+          </section>
 
         </main>
     </div>

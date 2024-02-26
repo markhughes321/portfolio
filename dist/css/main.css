@@ -328,6 +328,42 @@ i {
 #projects-page .project-intro {
   margin-bottom: 10px; }
 
+/* General Styles */
+#contact-page .contact-form {
+  max-width: auto;
+  margin: 50px auto; }
+
+#contact-page .contact-form form {
+  display: flex;
+  flex-direction: column; }
+
+#contact-page .contact-form label {
+  margin-bottom: 5px;
+  font-family: Avenir Book;
+  line-height: 20px;
+  font-size: 20px;
+  color: #ffffff; }
+
+#contact-page .contact-form input[type="text"],
+#contact-page .contact-form input[type="email"],
+#contact-page .contact-form {
+  width: 100%;
+  padding: 13px 0px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-sizing: border-box; }
+
+#contact-page .contact-form button[type="submit"] {
+  background-color: #ff0;
+  color: #000000;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; }
+
+#contact-page .contact-form button[type="submit"]:hover {
+  background-color: #ff0; }
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -362,6 +398,7 @@ i {
   padding: 0.05rem 0.5rem; }
 
 #services-grid,
+#contact-page,
 section,
 main,
 body,
