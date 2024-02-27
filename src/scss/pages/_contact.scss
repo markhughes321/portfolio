@@ -3,18 +3,27 @@
 
 #contact-page {
 
-  .contact-form {
-    max-width: auto;
-    margin: 50px auto;
+  .contact-grid {
+    height: auto;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    padding-top: 2rem;
   }
 
-  .contact-form form {
+  .contact-info .fa.fa-envelope email-text {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+  
+  .contact-info .email-text {
+    display: inline-block;
+    vertical-align: middle;
   }
 
   .contact-form label {
-    margin-bottom: 5px;
     font-family: Avenir Book;
     line-height: 20px;
     font-size: 20px;
@@ -22,14 +31,25 @@
   }
 
   .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form {
+  .contact-form input[type="email"] {
+    background-color: $black;
     width: 100%;
-    padding: 13px 0px;
+    padding: 5px 0px;
     margin-bottom: 15px;
     border-radius: 5px;
     box-sizing: border-box;
+    font-size: 22px;
+    color: $white;
+    border: 1px solid $white;
   }
+
+  .contact-form input[type="text"]:focus,
+  .contact-form input[type="email"]:focus,
+  .contact-form input[type="text"]:not(:focus):valid,
+  .contact-form input[type="email"]:not(:focus):valid {
+    outline: none;
+    border: 1px dashed $white; /* Change border style to dashed when focused */
+}
 
 
   .contact-form button[type="submit"] {
