@@ -11,17 +11,20 @@
     grid-gap: 1.5rem;
     padding-top: 2rem;
   }
-
-  .contact-info .fa.fa-envelope email-text {
+  
+  .contact-details a {
     display: flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
+    align-items: center; /* Align items vertically */
   }
   
-  .contact-info .email-text {
-    display: inline-block;
-    vertical-align: middle;
+  .contact-details a i {
+    margin-right: 5px; /* Adjust spacing between icon and text */
   }
+
+  .contact-details {
+    margin-top: 20px;
+  }
+
 
   .contact-form label {
     font-family: Avenir Book;

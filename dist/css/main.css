@@ -337,14 +337,17 @@ i {
   grid-gap: 1.5rem;
   padding-top: 2rem; }
 
-#contact-page .contact-info .fa.fa-envelope email-text {
+#contact-page .contact-details a {
   display: flex;
   align-items: center;
-  padding: 0.5rem 1rem; }
+  /* Align items vertically */ }
 
-#contact-page .contact-info .email-text {
-  display: inline-block;
-  vertical-align: middle; }
+#contact-page .contact-details a i {
+  margin-right: 5px;
+  /* Adjust spacing between icon and text */ }
+
+#contact-page .contact-details {
+  margin-top: 20px; }
 
 #contact-page .contact-form label {
   font-family: Avenir Book;
@@ -409,7 +412,8 @@ i {
   align-items: center; }
 
 .footer a:hover,
-.recent-work a:hover {
+.recent-work a:hover,
+.contact-details a:hover {
   color: #ff0;
   text-decoration: none; }
 
@@ -437,6 +441,10 @@ i,
 .projects,
 .main #error-page .container {
   border: 0px #ccc solid; }
+
+@media (max-width: 750px) {
+  .contact-details {
+    display: none; } }
 
 /* media query for tablet */
 @media (min-width: 750px) {
